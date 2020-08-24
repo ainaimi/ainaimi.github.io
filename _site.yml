@@ -12,6 +12,8 @@ navbar:
       href: http://github.com/ainaimi
     - icon: fa-twitter fa-lg
       href: https://twitter.com/ashley_naimi
+    - icon: fa-stack-overflow fa-lg
+      href: https://stats.stackexchange.com/users/79490/ashley-naimi
 output:
   html_document:
     theme: paper
