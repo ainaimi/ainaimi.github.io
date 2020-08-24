@@ -190,8 +190,6 @@ Choosing the right memory threshold is also important. Too little, and your job 
 
 Finally, the partition option is important to select appropriately. There are five partitions on the Rollins cluster, each allocated to accommodate programs with a certain run time. Details are on page 6 of the User's Guide.
 
-%There are a lot of different options available to a user. More detailed information can be found on the CRC website. To get a sense of how jobs are prioritized in the queue (and thus how you should optimize these options so as to not wait too long for your job to start), refer to the Fair Share and Priority section [here](https://crc.pitt.edu/h2p).
-
 The next section in the shell script tells the cluster which modules you need to run your job. It's important to start this section with `module purge`, which clears up the environment, thus avoiding potential conflict between modules. %You will then have to load any modules you may need, which may include compilers such as `module load gcc` (you will need this and others, especially if you use the tidyverse or Rcpp). 
 Finally, you have to load R using `module load r`. Note that we can also specify options here, which I sometimes do. To see which modules are available to use, enter:
 
