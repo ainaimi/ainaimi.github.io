@@ -6,17 +6,16 @@ navbar:
     - text: "Computing"
       href: computing.html 
   right:
-    - icon: fas fa-file-alt
-      href: "files/CV.ain.Dec2020.pdf"
-    - icon: fa-envelope fa-lg
+    - icon: fa-envelope fa-2x
       href: "mailto:ashley.naimi@emory.edu"
-    - icon: fa-github fa-lg
+    - icon: fa-github fa-2x
       href: http://github.com/ainaimi
-    - icon: fa-twitter fa-lg
+    - icon: fa-twitter fa-2x
       href: https://twitter.com/ashley_naimi
-    - icon: fa-stack-overflow fa-lg
+    - icon: ai ai-google-scholar-square ai-2x
+      href: https://scholar.google.com/citations?user=hA7DPuMAAAAJ&hl=en
+    - icon: fa-stack-overflow fa-2x
       href: https://stats.stackexchange.com/users/79490/ashley-naimi
 output:
   html_document:
-    theme: paper
     css: 'styles.css'
