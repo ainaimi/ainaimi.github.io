@@ -6,6 +6,8 @@ navbar:
     - text: "Computing"
       href: computing.html 
   right:
+    - icon: fas fa-file-alt
+      href: "files/CV.ain.Dec2020.pdf"
     - icon: fa-envelope fa-lg
       href: "mailto:ashley.naimi@emory.edu"
     - icon: fa-github fa-lg

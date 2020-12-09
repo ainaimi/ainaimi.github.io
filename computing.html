@@ -11,7 +11,7 @@
 
 
 
-<title>Accessing and Using Rollins HPC: A Rudimentary Introduction</title>
+<title>Accessing and Using Rollins HPC: A Basic Introduction</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -295,6 +295,12 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
+  <a href="files/CV.ain.Dec2020.pdf">
+    <span class="fas fa fas fa-file-alt"></span>
+     
+  </a>
+</li>
+<li>
   <a href="http://github.com/ainaimi">
     <span class="fa fa-github fa-lg"></span>
      
@@ -321,7 +327,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Accessing and Using Rollins HPC: A Rudimentary Introduction</h1>
+<h1 class="title toc-ignore">Accessing and Using Rollins HPC: A Basic Introduction</h1>
 
 </div>
 
@@ -335,8 +341,8 @@ $(document).ready(function () {
 <div id="logging-into-and-exploring-the-cluster" class="section level4">
 <h4>Logging into and Exploring the Cluster</h4>
 <p>The cluster is a unix server that can be accessed from the command line on your computer (e.g., Terminal on macOS). First, ensure you are connected to the VPN. Next, open up the command line interface. This includes Terminal on a Mac (or a Terminal emulator, such as Iterm2), Terminal on a Linux machine, or Powershell on a Windows 10 Machine. Once open, you are interacting with the command line interface (CLI), or the prompt from which you can access the cluster. To access the cluster, you must login via SSH which can be done with the following command:</p>
-<pre><code>ssh anaimi@clogin01.sph.emory.edu</code></pre>
-<p>where my user name (anaimi) will be replaced with yours. If you enter the above on the command line (and are connected to the VPN), you should be prompted to enter a password. If it’s your first time logging on, you will need to follow the instructions in the above user’s guide. Otherwise, use the password you set at your first login and proceed. This should connect you to the cluster. You will know that you have successfully connected when you see the welcome page on your command line interface:</p>
+<pre><code>ssh [username]@clogin01.sph.emory.edu</code></pre>
+<p>where <code>[username]</code> should be replaced with your user name. If you enter the above on the command line (and are connected to the VPN), you should be prompted to enter a password. If it’s your first time logging on, you will need to follow the instructions in the above user’s guide. Otherwise, use the password you set at your first login and proceed. This should connect you to the cluster. You will know that you have successfully connected when you see the welcome page on your command line interface:</p>
 <p><img src="figures/ss1.png" width="500px" style="display: block; margin: auto;" /></p>
 <p>At this point, you will need to use some basic commands to interact with the Unix system. There are a lot of resources available on this topic. The best I’ve found (so far) is the free book by Sean Kross:</p>
 <p><a href="https://seankross.com/the-unix-workbench/" class="uri">https://seankross.com/the-unix-workbench/</a></p>

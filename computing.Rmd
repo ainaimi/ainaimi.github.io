@@ -1,5 +1,5 @@
 ---
-title: "Accessing and Using Rollins HPC: A Rudimentary Introduction"
+title: "Accessing and Using Rollins HPC: A Basic Introduction"
 affiliation: Department of Epidemiology, Emory University
 output: html_document
 ---
@@ -17,10 +17,10 @@ The Rollins School of Public Health houses a computing cluster that our group ha
 The cluster is a unix server that can be accessed from the command line on your computer (e.g., Terminal on macOS). First, ensure you are connected to the VPN. Next, open up the command line interface. This includes Terminal on a Mac (or a Terminal emulator, such as Iterm2), Terminal on a Linux machine, or Powershell on a Windows 10 Machine. Once open, you are interacting with the command line interface (CLI), or the prompt from which you can access the cluster. To access the cluster, you must login via SSH which can be done with the following command:
 
 ```{}
-ssh anaimi@clogin01.sph.emory.edu
+ssh [username]@clogin01.sph.emory.edu
 ```
 
-where my user name (anaimi) will be replaced with yours. If you enter the above on the command line (and are connected to the VPN), you should be prompted to enter a password. If it's your first time logging on, you will need to follow the instructions in the above user's guide. Otherwise, use the password you set at your first login and proceed. This should connect you to the cluster. You will know that you have successfully connected when you see the welcome page on your command line interface:
+where `[username]` should be replaced with your user name. If you enter the above on the command line (and are connected to the VPN), you should be prompted to enter a password. If it's your first time logging on, you will need to follow the instructions in the above user's guide. Otherwise, use the password you set at your first login and proceed. This should connect you to the cluster. You will know that you have successfully connected when you see the welcome page on your command line interface:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
 knitr::include_graphics("./figures/ss1.png")
