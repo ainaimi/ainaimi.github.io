@@ -1,7 +1,7 @@
 name: "Ashley I. Naimi"
 output_dir: "."
 navbar:
-  title: "Ashley I. Naimi"
+  title: "Home"
   left:
     - text: "Computing"
       href: computing.html 

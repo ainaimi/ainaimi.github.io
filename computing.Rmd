@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
 ---
 title: "Accessing and Using Rollins HPC: A Basic Introduction"
 affiliation: Department of Epidemiology, Emory University
@@ -6,9 +8,9 @@ output: html_document
 
 #### Introduction: The Center for Resource Computing
 
-The Rollins School of Public Health houses a computing cluster that our group has access to. To gain access you must first open an account, and acquire access to the Emory-VPN HIPAA core, which can be done by following the instructions here:
+The Rollins School of Public Health houses a computing cluster, and if you are joining our research team, you will most likely have to use it at some point in your analyses. This document is meant to help you familiarize yourself with the basics behind using the Rollins computing cluster. 
 
-\noindent \href{}{} 
+To gain access to the cluster you must first open an account, and acquire access to the Emory-VPN HIPAA core, which can be done by emailing your advisor to request access (they will need an account).
 
 \noindent Once your account is created, and clearance and VPN access is obtained, you may access the computing cluster. 
 
