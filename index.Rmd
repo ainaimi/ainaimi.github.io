@@ -9,10 +9,7 @@
 
 **I am currently building this site. Lots of changes to come ...**
 
-I'm an Associate Professor in the Department of Epidemiology at 
-Emory University's [Rollins School of Public Health](https://www.sph.emory.edu/).
-
-I am Associate Professor in the Department of Epidemiology at the Rollins School of Public Health, Emory University. I have a PhD in Epidemiology and Biostatistics, with expertise in causal inference, machine learning, and artificial intelligence methods. Substantively, I leverage this expertise to answer questions related to reproductive and perinatal epidemiology, nutritional epidemiology, social determinants of health, and (recently) infectious diseases.
+I am Associate Professor in the Department of Epidemiology at the [Rollins School of Public Health](https://www.sph.emory.edu/), Emory University. I have a PhD in Epidemiology and Biostatistics, with expertise in causal inference, machine learning, and artificial intelligence methods. Substantively, I leverage this expertise to answer questions related to reproductive and perinatal epidemiology, nutritional epidemiology, social determinants of health, and (recently) infectious diseases.
 
 A recent copy of my CV is available [here](files/CV.ain.Dec2020.pdf).
 
