@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<br>
+
+
+---
+
+<img src="figures/conzuelo.jpeg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
+
+**Gabriel Conzuelo** I am a PhD student in Epidemiology at University of Pittsburgh. My dissertation is focused on machine learning methods for effect measure modification, transportability of causal effects in randomized trials, and measurement error correction in complex longitudinal data, all in perinatal epidemiology and women's health. 
+
+<br>
+<br>
+<br>
+<br>
+
+---
+
+<img src="figures/conzuelo.jpeg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
+
+I am a PhD student in Epidemiology at University of Pittsburgh. My work consists on developing epidemiologic methods for causal inference in perinatal epidemiology and women's health.
+
+<br>
+<br>
+<br>
+<br>
+
+
+---
+
+
+---
+
+<img src="figures/yu.jpg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
+
+**Ya Hui Yu** obtained her Ph.D in Epidemiology at University of Pittsburgh in 2018. Her dissertation focused on conceptual and methodological challenges on quantifying the impact of maternal incident obesity on perinatal mortality. She is currently a postdoctoral researcher at McGill University, working with Dr Robert Platt and Dr Kristian Fillion.
+
+<br>
+<br>
+<br>
+<br>
+
+
+---
