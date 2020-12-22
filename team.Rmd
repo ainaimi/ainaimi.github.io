@@ -2,6 +2,16 @@
 
 <br>
 
+---
+
+<img src="figures/Rudolph.jpg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
+
+**Jackie Rudolph** I'm a Post-Doctoral Research Fellow in Epidemiology at Emory University. My research is focused on applying advanced causal inference methods to address challenges in reproductive, HIV/AIDS, and Environmental epidemiology. In these areas, I am currently working on methods for causal intervention analysis, competing events, simulation, and generalization (transportability).
+
+<br>
+<br>
+<br>
+<br>
 
 ---
 
@@ -16,9 +26,9 @@
 
 ---
 
-<img src="figures/conzuelo.jpeg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
+<img src="figures/zhong.jpg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
 
-I am a PhD student in Epidemiology at University of Pittsburgh. My work consists on developing epidemiologic methods for causal inference in perinatal epidemiology and women's health.
+**Yongqi Zhong** I’m a PhD candidate in epidemiology at Pitt Public Health, with interests in causal inference & discovery, graphical models, machine learning and coding. My research focuses on applying advanced methods in observational studies and randomized trials.
 
 <br>
 <br>
