@@ -43,7 +43,7 @@
 
 <img src="figures/yu.jpg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
 
-**Ya Hui Yu** obtained her Ph.D in Epidemiology at University of Pittsburgh in 2018. Her dissertation focused on conceptual and methodological challenges on quantifying the impact of maternal incident obesity on perinatal mortality. She is currently a postdoctoral researcher at McGill University, working with Dr Robert Platt and Dr Kristian Fillion.
+**Ya-Hui Yu** obtained her Ph.D in Epidemiology at University of Pittsburgh in 2018. Her dissertation focused on conceptual and methodological challenges on quantifying the impact of maternal incident obesity on perinatal mortality. She is currently a postdoctoral researcher at McGill University, working with Dr Robert Platt and Dr Kristian Fillion.
 
 <br>
 <br>
