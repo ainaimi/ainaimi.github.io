@@ -20,6 +20,4 @@ navbar:
       href: https://stats.stackexchange.com/users/79490/ashley-naimi
 output:
   html_document:
-    css: 
-      - 'styles.css'
-      - https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css
+    css: 'styles.css'
