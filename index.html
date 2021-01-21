@@ -13,6 +13,7 @@
 
 <title>index.utf8</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,7 +33,7 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-      </style>
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -78,6 +79,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -293,19 +295,19 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:ashley.naimi@emory.edu">
-    <span class="fa fa-envelope fa-2x"></span>
+    <span class="fas fa-envelope fa-2x"></span>
      
   </a>
 </li>
 <li>
   <a href="http://github.com/ainaimi">
-    <span class="fa fa-github fa-2x"></span>
+    <span class="fas fa-github fa-2x"></span>
      
   </a>
 </li>
 <li>
   <a href="https://twitter.com/ashley_naimi">
-    <span class="fa fa-twitter fa-2x"></span>
+    <span class="fas fa-twitter fa-2x"></span>
      
   </a>
 </li>
@@ -317,7 +319,7 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="https://stats.stackexchange.com/users/79490/ashley-naimi">
-    <span class="fa fa-stack-overflow fa-2x"></span>
+    <span class="fas fa-stack-overflow fa-2x"></span>
      
   </a>
 </li>
@@ -334,13 +336,16 @@ $(document).ready(function () {
 </div>
 
 
+<div id="section" class="section level2">
+<h2>—</h2>
 <p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></p>
 <p><br></p>
 <p><img src="figures/naimi_crop.jpeg" style="width:25%; border:1px solid; margin-right: 20px" align="left"></p>
 <p><strong>I am currently building this site. Lots of changes to come …</strong></p>
 <p>I focus on causal inference, machine learning, and reproductive epidemiology at Emory University’s <a href="https://www.sph.emory.edu/">Rollins School of Public Health</a> in the Department of Epidemiology.</p>
-<p>A recent copy of my CV is available <a href="files/CV.ain.Dec2020.pdf">here</a>.</p>
+<p>A recent copy of my CV is available <a href="files/CV.ain.Jan2021.pdf">here</a>.</p>
 <p><br> <br> <br> <br> <br> <br></p>
+</div>
 <div id="projects" class="section level1">
 <h1>Projects</h1>
 <p><br></p>
@@ -377,7 +382,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
