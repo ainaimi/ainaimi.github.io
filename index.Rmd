@@ -28,6 +28,12 @@ A recent copy of my CV is available [here](files/CV.ain.Jan2021.pdf).
      
 The Effects of Aspirin in Gestation and Reproduction (EAGeR) study was a randomized trial of low-dose aspirin to prevent miscarriage and promote live birth. Complex longitudinal data were collected in this trial, and we are currently using a range of methods to estimate per protocol effects, adjust for measurement error, and to transport the estimated per protocol effects to a more representative population.
 
+#### Media Coverage: 
+
+- Healio Medical News: "Low-dose aspirin improves chances of pregnancy after miscarriage", available [here](https://www.healio.com/news/primary-care/20210125/lowdose-aspirin-improves-chances-of-pregnancy-after-miscarriage)
+
+- Healthline Medical News: "Low-Dose Aspirin May Help Pregnant People With History of Pregnancy Loss", available [here](https://www.healthline.com/health-news/low-dose-aspirin-may-help-pregnant-women-with-history-of-pregnancy-loss#Low-dose-aspirin-can-improve-pregnancy-outcomes-in-at-risk-people)
+
 <br>
 
 #### Informing national guidelines on diet patterns that promote healthy pregnancy outcomes
