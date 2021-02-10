@@ -1,14 +1,15 @@
 
 <br>
+<br>
+<br>
 
 <img src="figures/naimi_crop.jpeg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
-
-**I am currently building this site. Lots of changes to come ...**
 
 I am Associate Professor in the Department of Epidemiology at the [Rollins School of Public Health](https://www.sph.emory.edu/), Emory University. I have a PhD in Epidemiology and Biostatistics, with expertise in causal inference, machine learning, and artificial intelligence methods. Substantively, I leverage this expertise to answer questions related to reproductive and perinatal epidemiology, nutritional epidemiology, social determinants of health, and (recently) infectious diseases.
 
 A recent copy of my CV is available [here](files/CV.ain.Jan2021.pdf).
 
+<br>
 <br>
 <br>
 <br>
