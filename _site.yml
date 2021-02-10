@@ -5,8 +5,9 @@ navbar:
   left:
     - text: "Team"
       href: team.html 
-    - text: "Computing"
-      href: computing.html 
+    - text: "Resources"
+      href: access.html 
+      
   right:
     - icon: fa-envelope fa-2x
       href: "mailto:ashley.naimi@emory.edu"

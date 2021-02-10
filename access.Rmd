@@ -1,0 +1,10 @@
+---
+---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<br>
+
+Relevant group resources can be found on this webpage: 
+
+- A short guide on accessing the Rollins Computing cluster: https://ainaimi.github.io/resources/computing.html
