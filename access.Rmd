@@ -3,6 +3,8 @@
 <br>
 <br>
 
-Relevant group resources can be found on this webpage: 
+Relevant resources can be found on this webpage: 
+
+- **Book club!**: [100 Page ML Book](http://themlbook.com/), by Andriy Burkov. Email me for details.
 
 - A short guide on [Accessing the Rollins Computing Cluster](https://ainaimi.github.io/resources/computing.html)
