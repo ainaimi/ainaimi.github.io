@@ -5,7 +5,7 @@
 
 Relevant resources can be found on this webpage: 
 
-- **Book club!**: [100 Page ML Book](http://themlbook.com/), by Andriy Burkov. Email me for details.
+- You can find a [Machine Learning Reading List](https://ainaimi.github.io/resources/reading_list.html) 
 
 - Join our [Causal Inference and Machine Learning Mailing](https://listserv.cc.emory.edu/scripts/wa.exe?SUBED1=CI-ML&A=1) **Listserv**.
 
