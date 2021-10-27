@@ -5,11 +5,11 @@
 
 Relevant resources can be found on this webpage: 
 
-- You can find a document on setting up a Mac [Scientific Computing](https://ainaimi.github.io/resources/ComputerSetup.html) here.
+- Some things I do to set up macOS for [Scientific Computing](https://ainaimi.github.io/resources/ComputerSetup.html).
 
-- You can find a [Machine Learning Reading List](https://ainaimi.github.io/resources/reading_list_ML.html) here.
+- [Machine Learning Reading List](https://ainaimi.github.io/resources/reading_list_ML.html) here.
 
-- You can find a reading list on [Monte Carlo Simulation](https://ainaimi.github.io/resources/reading_list_MCSim.html) here.
+- [Monte Carlo Simulation Reading List](https://ainaimi.github.io/resources/reading_list_MCSim.html) here.
 
 - Join our [Causal Inference and Machine Learning Mailing](https://listserv.cc.emory.edu/scripts/wa.exe?SUBED1=CI-ML&A=1) **Listserv**.
 
