@@ -13,7 +13,7 @@
 
 <title>access.knit</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" type="text/css" />
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -84,6 +85,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -236,7 +240,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -299,11 +303,25 @@ $(document).ready(function () {
 <p><br> <br> <br></p>
 <p>Relevant resources can be found on this webpage:</p>
 <ul>
-<li><p>Some things I do to set up macOS for <a href="https://ainaimi.github.io/resources/ComputerSetup.html">Scientific Computing</a>.</p></li>
-<li><p><a href="https://ainaimi.github.io/resources/reading_list_ML.html">Machine Learning Reading List</a> here.</p></li>
-<li><p><a href="https://ainaimi.github.io/resources/reading_list_MCSim.html">Monte Carlo Simulation Reading List</a> here.</p></li>
-<li><p>Join our <a href="https://listserv.cc.emory.edu/scripts/wa.exe?SUBED1=CI-ML&amp;A=1">Causal Inference and Machine Learning Mailing</a> <strong>Listserv</strong>.</p></li>
-<li><p>A short guide on <a href="https://ainaimi.github.io/resources/computing.html">Accessing the Rollins Computing Cluster</a>.</p></li>
+<li><p>Some things I do to set up macOS for <a
+href="https://ainaimi.github.io/resources/ComputerSetup.html">Scientific
+Computing</a>.</p></li>
+<li><p><a
+href="https://ainaimi.github.io/resources/reading_list_ML.html">Machine
+Learning Reading List</a> here.</p></li>
+<li><p><a
+href="https://ainaimi.github.io/resources/reading_list_CI.html">Causal
+Inference Reading List</a> here.</p></li>
+<li><p><a
+href="https://ainaimi.github.io/resources/reading_list_MCSim.html">Monte
+Carlo Simulation Reading List</a> here.</p></li>
+<li><p>Join our <a
+href="https://listserv.cc.emory.edu/scripts/wa.exe?SUBED1=CI-ML&amp;A=1">Causal
+Inference and Machine Learning Mailing</a>
+<strong>Listserv</strong>.</p></li>
+<li><p>A short guide on <a
+href="https://ainaimi.github.io/resources/computing.html">Accessing the
+Rollins Computing Cluster</a>.</p></li>
 </ul>
 
 

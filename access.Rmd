@@ -9,6 +9,8 @@ Relevant resources can be found on this webpage:
 
 - [Machine Learning Reading List](https://ainaimi.github.io/resources/reading_list_ML.html) here.
 
+- [Causal Inference Reading List](https://ainaimi.github.io/resources/reading_list_CI.html) here.
+
 - [Monte Carlo Simulation Reading List](https://ainaimi.github.io/resources/reading_list_MCSim.html) here.
 
 - Join our [Causal Inference and Machine Learning Mailing](https://listserv.cc.emory.edu/scripts/wa.exe?SUBED1=CI-ML&A=1) **Listserv**.
