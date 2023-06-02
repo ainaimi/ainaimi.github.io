@@ -3,7 +3,7 @@
 <br>
 <br>
 
-<img src="figures/naimi_crop.jpeg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
+<img src="figures/naimi_headshot.png" style="width:25%; border:1px solid; margin-right: 20px" align="left">
 
 I am Associate Professor in the Department of Epidemiology at the [Rollins School of Public Health](https://www.sph.emory.edu/), Emory University. I have a PhD in Epidemiology and Biostatistics, with expertise in causal inference, machine learning, and artificial intelligence methods. Substantively, I leverage this expertise to answer questions related to reproductive and perinatal epidemiology, nutritional epidemiology, and the social determinants of health.
 
