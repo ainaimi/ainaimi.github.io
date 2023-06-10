@@ -13,6 +13,4 @@ Relevant resources can be found on this webpage:
 
 - [Monte Carlo Simulation Reading List](https://ainaimi.github.io/resources/reading_list_MCSim.html) here.
 
-- Join our [Causal Inference and Machine Learning Mailing](https://listserv.cc.emory.edu/scripts/wa.exe?SUBED1=CI-ML&A=1) **Listserv**.
-
 - A short guide on [Accessing the Rollins Computing Cluster](https://ainaimi.github.io/resources/computing.html).
