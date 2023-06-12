@@ -18,7 +18,7 @@
 
 <img src="figures/Nlandu2.jpg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
 
-**Mundayi Nlandu** completed an MPH in Epidemiology at Emory University. Her research focused on developing and deploying machine learning algorithms to evaluate the relative roles of basic demographic, clinical, and reproductive markers as predictors of stillbirth in a population of pregnant women in Norway. Her work focused particularly on the role of fetal to placental weight ratios as a marker of stillbirth in the Norway population.
+**Mundayi Nlandu** completed an MPH in Epidemiology at Emory University. Her research focused on developing and deploying machine learning algorithms to evaluate the relative roles of basic demographic, clinical, and reproductive markers as predictors of stillbirth in a population of pregnant women in Norway. Her work focused particularly on the role of fetal to placental weight ratios as a marker of stillbirth in the Norway population. She is currently an ORISE Fellow at the Centers for Disease Control and Prevention.
 
 <br>
 <br>
