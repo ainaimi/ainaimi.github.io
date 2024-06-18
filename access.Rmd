@@ -5,6 +5,8 @@
 
 Relevant resources can be found on this webpage: 
 
+- Materials for the [IMCS SER Shortcourse](https://ainaimi.github.io/resources/SER2024.html).
+
 - Some things I do to set up macOS for [Scientific Computing](https://ainaimi.github.io/resources/ComputerSetup.html).
 
 - [Machine Learning Reading List](https://ainaimi.github.io/resources/reading_list_ML.html) here.
