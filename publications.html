@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Select Publications</title>
+
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" type="text/css" />
+<link rel="stylesheet" href="styles_modern.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="team.html">Team</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="access.html">Resources</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:ashley.naimi@emory.edu">
+    <span class="fa fa-envelope fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/ainaimi">
+    <span class="fab fa-github fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/ashley_naimi">
+    <span class="fab fa-twitter fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=hA7DPuMAAAAJ&amp;hl=en">
+    <span class="ai ai ai ai-google-scholar-square ai-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://stats.stackexchange.com/users/79490/ashley-naimi">
+    <span class="fab fa-stack-overflow fa-2x"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Select Publications</h1>
+
+</div>
+
+
+<p><br></p>
+<div id="forthcoming" class="section level2">
+<h2>Forthcoming</h2>
+</div>
+<div id="published" class="section level2">
+<h2>Published</h2>
+<p><strong>Naimi AI</strong>, Benkeser D, Rudolph JE. Computing True
+Parameter Values in Simulation Studies Using Monte Carlo Integration.
+<em>Epidemiology</em>. Accepted March 11 2025. <a
+href="files/publications/Naimi_et_al_2025_Epidemiology.pdf">PDF</a></p>
+<p>Zheng Z, Kennedy EH, Bodnar LM, <strong>Naimi AI</strong>. Efficient
+Generalization and Transportation. <em>Statistical Science</em>.
+Accepted for Publication, Dec 29 2024. <a
+href="files/publications/Zheng_et_al_2025_Statistical_Science.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Yu YH, Bodnar LM. Pseudo-Random Number
+Generator Influences on Average Treatment Effect Estimates Obtained with
+Machine Learning. <em>Epidemiology</em>. 2024 Nov 1;35(6):779-786. <a
+href="files/publications/Naimi_et_al_2024_Epidemiol.pdf">PDF</a></p>
+<p>Rudolph JE, Kim K, Kennedy EH, <strong>Naimi AI</strong>. Estimation
+of the time-varying incremental effect of low dose aspirin on incidence
+of pregnancy. <em>Epidemiology</em>. 2023 Jan 1;34(1):38-44. <a
+href="files/publications/Rudolph_et_al_2023_Epidemiology.pdf">PDF</a></p>
+<p>Bodnar LM, Kirkpatrick SI, <strong>Naimi AI</strong>. Machine
+learning can improve the development of evidence-based dietary
+guidelines. <em>Public Health Nutrition</em>. 2022;25(9):2566-2569. <a
+href="files/publications/Bodnar_et_al_2022_Public_Health_Nutrition.pdf">PDF</a></p>
+<p>Rudolph JE, Schisterman EF, <strong>Naimi AI</strong>. A simulation
+study comparing the performance of time-varying inverse probability
+weighting and g-computation in survival analysis. <em>American Journal
+of Epidemiology</em>. 2023 Jan 6;192(1):102-110. <a
+href="files/publications/Rudolph_et_al_2021b_AJE.pdf">PDF</a></p>
+<p>Rudolph JE, Benkeser D, Kennedy EH, Schisterman EF, <strong>Naimi
+AI</strong>. Estimation of the Average Causal Effect in Longitudinal
+Data with Time-Varying Exposures: The Challenge of Nonpositivity and the
+Impact of Model Flexibility. <em>American Journal of Epidemiology</em>.
+2022 Oct 20;191(11):1962-1969. <a
+href="files/publications/Rudolph_et_al_2022_AJE.pdf">PDF</a></p>
+<p>Kim K, Kennedy EH, <strong>Naimi AI</strong>. Incremental
+Intervention Effects in Studies with Many Timepoints, Repeated Outcomes,
+and Dropout. <em>Journal of Causal Inference</em>. 2021. <a
+href="files/publications/Kim_et_al_2021_JCI.pdf">PDF</a></p>
+<p>Bodnar LM, Cartus A, Kennedy EH, Kirkpatrick S, Parisi S, Himes K,
+Parker C, Grobman W, Simhan H, Silver R, Wing D, <strong>Naimi
+AI</strong>. A doubly robust machine learning-based approach to evaluate
+modifiers of the association between fruit and vegetable intake and
+preeclampsia. <em>American Journal of Epidemiology</em>. 2022 Jul
+23;191(8):1396-1406. <a
+href="files/publications/Bodnar_et_al_2022_AJE.pdf">PDF</a></p>
+<p>Rudolph JE, Cartus A, Bodnar LM, Schisterman EF, <strong>Naimi
+AI</strong>. The role of the natural course in causal analysis.
+<em>American Journal of Epidemiology</em>. 2022 Jan 24;191(2):341-348.
+<a href="files/publications/Rudolph_et_al_2022b_AJE.pdf">PDF</a></p>
+<p>Conzuelo-Rodriguez G, Bodnar LM, Brooks MM, Wahed A, Kennedy EH,
+<strong>Naimi AI</strong>. Performance evaluation of parametric and
+nonparametric methods when assessing effect measure modification.
+<em>American Journal of Epidemiology</em>. 2022 Jan 1;191(1):198-207. <a
+href="files/publications/Conzuelo_et_al_2022_Am_J_Epidemiol.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Perkins NJ, Mumford SL, Sjaarda LA, Platt
+RW, Silver RM, Schisterman EF. The per protocol effect of
+preconception-initiated low-dose aspirin on conception, pregnancy loss,
+and live birth. <em>Annals of Internal Medicine</em>. 2021
+May;174(5):595-601. <a
+href="files/publications/Naimi_et_al_2021_Annals_of_Internal_Medicine.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Mishler A, Kennedy EH. Challenges in
+Obtaining Valid Causal Effect Estimates with Machine Learning
+Algorithms. <em>American Journal of Epidemiology</em>. 2023; 192(9):
+1536–1544. <a
+href="files/publications/Naimi_et_al_2023_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Rudolph JE, Kennedy EH, Cartus A,
+Kirkpatrick SI, Haas DM, Simhan H, Bodnar LM. Incremental propensity
+score estimation for time-fixed exposures. <em>Epidemiology</em>. 2021
+Mar 1;32(2):202-208. <a
+href="files/publications/Naimi_et_al_2021_Epidemiol.pdf">PDF</a></p>
+<p>Rudolph JE, Fox MP, <strong>Naimi AI</strong>. Simulation as a tool
+for teaching and learning epidemiologic methods. <em>American Journal of
+Epidemiology</em>. 2021 May 4;190(5):900-907. <a
+href="files/publications/Rudolph_et_al_2021_AJE.pdf">PDF</a></p>
+<p>Rudolph JE, Lesko CR, <strong>Naimi AI</strong>. Causal Inference in
+the Face of Competing Events. <em>Current Epidemiology Reports</em>.
+2020 Sep;7(3):125-131. <a
+href="files/publications/Rudolph_et_al_2020_CER.pdf">PDF</a></p>
+<p>Bodnar LM, Cartus AR, Kirkpatrick SI, Himes KP, Kennedy EH, Simhan
+HN, Grobman WA, Duffy JY, Silver RM, Parry S, <strong>Naimi AI</strong>.
+Machine learning as a strategy to account for dietary synergy: an
+illustration based on dietary intake and adverse pregnancy outcomes.
+<em>American Journal of Clinical Nutrition</em>. 2020 Jun
+1;111(6):1235-1243. <a
+href="files/publications/Bodnar_et_al_2020_AJCN.pdf">PDF</a></p>
+<p>Cartus AR, Bodnar LM, <strong>Naimi AI</strong>. The impact of
+undersampling on the predictive performance of logistic regression and
+machine learning algorithms: A simulation study. <em>Epidemiology</em>.
+2020 Sep;31(5):e42-e44. <a
+href="files/publications/Cartus_et_al_2020_Epidemiology.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>. Commentary: Obtaining Actionable
+Inferences from Epidemiologic Actions. <em>Epidemiology</em>. 2019
+Mar;30(2):243-245. <a
+href="files/publications/Naimi_2019_Epidemiology.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Balzer L. Stacked Generalization: An
+Introduction to Super Learning. <em>European Journal of
+Epidemiology</em>. 2018. 33(5):459-464. <a
+href="files/publications/Naimi_and_Balzer_2018_EJE.pdf">PDF</a></p>
+<p>Larkin JC, <strong>Naimi AI</strong>. Effect of population-specific
+birthweight curves on disparities in perinatal mortality in
+small-for-gestational age pregnancies. <em>American Journal of
+Perinatology</em>. 35(7):695-702. <a
+href="files/publications/Naimi_et_al_Epidmeiol_2018.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>. Commentary: Integrating Complex Systems
+Thinking into Epidemiologic Research. <em>Epidemiology</em>. 2016;
+27(6): 843-7. <a
+href="files/publications/Naimi_2016_Epidemiol.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Cole SR, Kennedy EH. An introduction to g
+methods. <em>International Journal of Epidemiology</em>. 2017; 46(2):
+756-762. <a
+href="files/publications/Naimi_et_al_2017_IJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>. The Counterfactual Implications of
+Fundamental Cause Theory. <em>Current Epidemiology Reports</em>. 2016;
+3(1): 92-97. <a href="files/publications/Naimi_2016_CER.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Auger N. Cumulative risk of stillbirth in
+the presence of competing events. <em>BJOG</em>. 2016; 123(7): 1071-4.
+<a href="files/publications/Naimi_&amp;_Auger_BJOG_2016.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Schnitzer ME, Moodie EE, Bodnar LM.
+Mediation Analysis for Health Disparities Research. <em>American Journal
+of Epidemiology</em>. 2016; 184(4): 315-24. <a
+href="files/publications/Naimi_et_al_2016_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>. Invited Commentary: Boundless Science:
+Putting Natural Direct and Indirect Effects in a Clearer Empirical
+Context. <em>American Journal of Epidemiology</em>. 2015; 182(2):109-14.
+<a href="files/publications/Naimi_2015_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Tchetgen Tchetgen EJ. Invited Commentary:
+Estimating Population Impact in the Presence of Competing Events.
+<em>American Journal of Epidemiology</em>. 2015; 181(8):571-4. <a
+href="files/publications/Naimi_&amp;_Tchetgen_Tchetgen_2015_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Kaufman JS. Invited Review: Counterfactual
+Theory in Social Epidemiology: Reconciling Analysis and Action for the
+Social Determinants of Health. <em>Current Epidemiology Reports</em>.
+2015; 2(1):52-60. <a
+href="files/publications/Naimi_and_Kaufman_2015_CER.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Moodie EE, Auger N, Kaufman JS.
+Semiparametric Adjusted Exposure-Response Curves. <em>Epidemiology</em>.
+2014; 25(6):919-22. <a
+href="files/publications/Naimi_et_al_2014a_Epidemiol.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Moodie EE, Auger N, Kaufman JS. Stochastic
+mediation contrasts in epidemiologic research: Interpregnancy interval
+and the educational disparity in preterm delivery. <em>American Journal
+of Epidemiology</em>. 2014; 180(4): 436-45. <a
+href="files/publications/Naimi_et_al_2014_AJE.pdf">PDF</a></p>
+<p>Keil A, Edwards J, Richardson DB, <strong>Naimi AI</strong>, Cole SR.
+The Parametric g-Formula for Time-to-event Data: Intuition and a Worked
+Example. <em>Epidemiology</em>. 2014; 25(6): 889-897. <a
+href="files/publications/Naimi_et_al_2014_Epid.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Kaufman JS, MacLehose RF. Mediation
+Misgivings: Ambiguous Clinical and Public Health Interpretations of
+Natural Direct and Indirect Effects. <em>International Journal of
+Epidemiology</em>. 2014; 43(5):1656-61. <a
+href="files/publications/Naimi_et_al_2014_IJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Moodie EE, Auger N, Kaufman JS.
+Constructing Inverse Probability Weights for Continuous Exposures: A
+Comparison of Methods. <em>Epidemiology</em>. 2014; 25:292-299. <a
+href="files/publications/Naimi_et_al_2014b_Epidemiol.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Richardson DB, Cole SR. Causal Inference
+in Occupational Epidemiology: Accounting for the Healthy Worker Effect
+by Using Structural Nested Models. <em>American Journal of
+Epidemiology</em>. 2013; 178(12):1681-1686. <a
+href="files/publications/Naimi_et_al_2013_AJE.pdf">PDF</a></p>
+<p>Cole SR, Richardson DB, Chu H, <strong>Naimi AI</strong>. Analysis of
+occupational asbestos exposure and lung cancer mortality using the G
+formula. <em>American Journal of Epidemiology</em>. 2013; 177(9):
+989-996. <a
+href="files/publications/Cole_et_al_2013_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Cole SR, Westreich DJ, Richardson DB.
+Reply Re: A comparison of methods to estimate the hazard ratio with time
+varying confounding and nonpositivity. <em>Epidemiology</em>. 2012;
+23(1): 179. <a
+href="files/publications/Naimi_&amp;_Westreich_2014_AJE.pdf">PDF</a></p>
+<p>Herring AH, <strong>Naimi AI</strong>. Invited Commentary: The
+Ecological Design. <em>British Journal of Obstetrics and
+Gynaecology</em>. 2012;119(13): 1638-1639. <a
+href="files/publications/Herring_&amp;_Naimi_2012_BJOG.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Kaufman JS, Howe CJ, Robinson WB. Letter:
+Mediation Considerations: serum potassium and the racial disparity in
+diabetes risk. <em>American Journal of Clinical Nutrition</em>. 2011;
+94(2):614-6. <a
+href="files/publications/Naimi_et_al_2011_AJCN.pdf">PDF</a></p>
+<p><br></p>
+<hr />
+<p><br></p>
+</div>
+<div id="aje-classroom-articles" class="section level2">
+<h2>AJE Classroom Articles</h2>
+<p><strong>Naimi AI</strong>, Whitcomb BW. Inferential Statistics and
+Direct versus Inverse Problems. Accepted for Publication March 13 2025.
+<a
+href="files/publications/classroom/Naimi_and_Whitcomb_2025c_AJE.pdf">PDF</a></p>
+<p>Zivich PN, <strong>Naimi AI</strong>. A Primer on Neural Networks.
+<em>American Journal of Epidemiology</em>. Accepted for Publication July
+30 2024. <a
+href="files/publications/classroom/Zivich_and_Naimi_2025_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Whitcomb BE. Inverse Probability Weighting
+for Categorical Exposures. <em>American Journal of Epidemiology</em>.
+Advance access publication date March 7, 2025. <a
+href="files/publications/classroom/Naimi_and_Whitcomb_2025b_AJE.pdf">PDF</a></p>
+<p>Banack HR, Mayeda ER, Fox MP, <strong>Naimi AI</strong>, Whitcomb BE.
+Collider Stratification Bias II: Magnitude of Bias. <em>American Journal
+of Epidemiology</em>. 2025;194:1149–1151 <a
+href="files/publications/classroom/Banack_et_al_2025_AJE.pdf">PDF</a></p>
+<p>Whitcomb BE, <strong>Naimi AI</strong>. Interaction in Theory and in
+Practice: Evaluating Combinations of Exposures in Epidemiologic
+Research. <em>American Journal of Epidemiology</em>. 2023 Jun
+2;192(6):845-848. <a
+href="files/publications/classroom/Whitcomb_and_Naimi_2023_AJE.pdf">PDF</a></p>
+<p>Banack HR, Mayeda ER, <strong>Naimi AI</strong>, Fox MP, Whitcomb BE.
+Collider Stratification Bias I: Principles and Structure. <em>American
+Journal of Epidemiology</em>. 2023 Oct 10:kwad203. <a
+href="files/publications/classroom/Banack_et_al_2023_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Whitcomb BE. Defining and Identifying
+Local Average Treatment Effects. <em>American Journal of
+Epidemiology</em>. 2024;193:935–937. <a
+href="files/publications/classroom/Naimi_and_Whitcomb_2024_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Whitcomb BE. Defining and Identifying
+Average Treatment Effects. <em>American Journal of Epidemiology</em>.
+2023 May 5;192(5):685-687. <a
+href="files/publications/classroom/Naimi_and_Whitcomb_2025_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Whitcomb BW. Simple Approaches for Dealing
+with Correlated Data. <em>American Journal of Epidemiology</em>. 2023
+Apr 6;192(4):507-509. <a
+href="files/publications/classroom/Naimi_and_Whitcomb_2023_AJE.pdf">PDF</a></p>
+<p>Whitcomb BE, <strong>Naimi AI</strong>. Defining, quantifying, and
+interpreting ‘noncollapsibility’ in epidemiologic studies of measures of
+effect. <em>American Journal of Epidemiology</em>. 2021;190(5):697-700.
+<a
+href="files/publications/classroom/Whitcomb_and_Naimi_2021_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Whitcomb BW. Estimating Risk Ratios and
+Risk Differences using Regression. <em>American Journal of
+Epidemiology</em>. 2020;189(6):508-510. <a
+href="files/publications/classroom/Naimi_and_Whitcomb_2020_AJE.pdf">PDF</a></p>
+<p>Whitcomb BW, <strong>Naimi AI</strong>. Things don’t always go as
+expected: the example of non-differential misclassification of exposure
+– bias and error. <em>American Journal of Epidemiology</em>.
+2020;189(5):365-368. <a
+href="files/publications/classroom/Whitcomb_and_Naimi_2021b_AJE.pdf">PDF</a></p>
+<p><strong>Naimi AI</strong>, Whitcomb BW. Can confidence intervals be
+interpreted? <em>American Journal of Epidemiology</em>.
+2020;189(7):631-633. <a
+href="files/publications/classroom/Naimi_and_Whitcomb_2020b_AJE.pdf">PDF</a></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

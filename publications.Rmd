@@ -1,0 +1,122 @@
+---
+title: "Select Publications"
+---
+
+<br>
+
+## Forthcoming
+
+
+## Published
+
+**Naimi AI**, Benkeser D, Rudolph JE. Computing True Parameter Values in Simulation Studies Using Monte Carlo Integration. *Epidemiology*. Accepted March 11 2025. [PDF](files/publications/Naimi_et_al_2025_Epidemiology.pdf)
+
+Zheng Z, Kennedy EH, Bodnar LM, **Naimi AI**. Efficient Generalization and Transportation. *Statistical Science*. Accepted for Publication, Dec 29 2024. [PDF](files/publications/Zheng_et_al_2025_Statistical_Science.pdf)
+
+**Naimi AI**, Yu YH, Bodnar LM. Pseudo-Random Number Generator Influences on Average Treatment Effect Estimates Obtained with Machine Learning. *Epidemiology*. 2024 Nov 1;35(6):779-786. [PDF](files/publications/Naimi_et_al_2024_Epidemiol.pdf)
+
+Rudolph JE, Kim K, Kennedy EH, **Naimi AI**. Estimation of the time-varying incremental effect of low dose aspirin on incidence of pregnancy. *Epidemiology*. 2023 Jan 1;34(1):38-44. [PDF](files/publications/Rudolph_et_al_2023_Epidemiology.pdf)
+
+Bodnar LM, Kirkpatrick SI, **Naimi AI**. Machine learning can improve the development of evidence-based dietary guidelines. *Public Health Nutrition*. 2022;25(9):2566-2569. [PDF](files/publications/Bodnar_et_al_2022_Public_Health_Nutrition.pdf)
+
+Rudolph JE, Schisterman EF, **Naimi AI**. A simulation study comparing the performance of time-varying inverse probability weighting and g-computation in survival analysis. *American Journal of Epidemiology*. 2023 Jan 6;192(1):102-110. [PDF](files/publications/Rudolph_et_al_2021b_AJE.pdf)
+
+Rudolph JE, Benkeser D, Kennedy EH, Schisterman EF, **Naimi AI**. Estimation of the Average Causal Effect in Longitudinal Data with Time-Varying Exposures: The Challenge of Nonpositivity and the Impact of Model Flexibility. *American Journal of Epidemiology*. 2022 Oct 20;191(11):1962-1969. [PDF](files/publications/Rudolph_et_al_2022_AJE.pdf)
+
+Kim K, Kennedy EH, **Naimi AI**. Incremental Intervention Effects in Studies with Many Timepoints, Repeated Outcomes, and Dropout. *Journal of Causal Inference*. 2021. [PDF](files/publications/Kim_et_al_2021_JCI.pdf)
+
+Bodnar LM, Cartus A, Kennedy EH, Kirkpatrick S, Parisi S, Himes K, Parker C, Grobman W, Simhan H, Silver R, Wing D, **Naimi AI**. A doubly robust machine learning-based approach to evaluate modifiers of the association between fruit and vegetable intake and preeclampsia. *American Journal of Epidemiology*. 2022 Jul 23;191(8):1396-1406. [PDF](files/publications/Bodnar_et_al_2022_AJE.pdf)
+
+Rudolph JE, Cartus A, Bodnar LM, Schisterman EF, **Naimi AI**. The role of the natural course in causal analysis. *American Journal of Epidemiology*. 2022 Jan 24;191(2):341-348. [PDF](files/publications/Rudolph_et_al_2022b_AJE.pdf)
+
+Conzuelo-Rodriguez G, Bodnar LM, Brooks MM, Wahed A, Kennedy EH, **Naimi AI**. Performance evaluation of parametric and nonparametric methods when assessing effect measure modification. *American Journal of Epidemiology*. 2022 Jan 1;191(1):198-207. [PDF](files/publications/Conzuelo_et_al_2022_Am_J_Epidemiol.pdf)
+
+**Naimi AI**, Perkins NJ, Mumford SL, Sjaarda LA, Platt RW, Silver RM, Schisterman EF. The per protocol effect of preconception-initiated low-dose aspirin on conception, pregnancy loss, and live birth. *Annals of Internal Medicine*. 2021 May;174(5):595-601. [PDF](files/publications/Naimi_et_al_2021_Annals_of_Internal_Medicine.pdf)
+
+**Naimi AI**, Mishler A, Kennedy EH. Challenges in Obtaining Valid Causal Effect Estimates with Machine Learning Algorithms. *American Journal of Epidemiology*. 2023; 192(9): 1536–1544. [PDF](files/publications/Naimi_et_al_2023_AJE.pdf)
+
+**Naimi AI**, Rudolph JE, Kennedy EH, Cartus A, Kirkpatrick SI, Haas DM, Simhan H, Bodnar LM. Incremental propensity score estimation for time-fixed exposures. *Epidemiology*. 2021 Mar 1;32(2):202-208. [PDF](files/publications/Naimi_et_al_2021_Epidemiol.pdf)
+
+Rudolph JE, Fox MP, **Naimi AI**. Simulation as a tool for teaching and learning epidemiologic methods. *American Journal of Epidemiology*. 2021 May 4;190(5):900-907. [PDF](files/publications/Rudolph_et_al_2021_AJE.pdf)
+
+Rudolph JE, Lesko CR, **Naimi AI**. Causal Inference in the Face of Competing Events. *Current Epidemiology Reports*. 2020 Sep;7(3):125-131. [PDF](files/publications/Rudolph_et_al_2020_CER.pdf)
+
+Bodnar LM, Cartus AR, Kirkpatrick SI, Himes KP, Kennedy EH, Simhan HN, Grobman WA, Duffy JY, Silver RM, Parry S, **Naimi AI**. Machine learning as a strategy to account for dietary synergy: an illustration based on dietary intake and adverse pregnancy outcomes. *American Journal of Clinical Nutrition*. 2020 Jun 1;111(6):1235-1243. [PDF](files/publications/Bodnar_et_al_2020_AJCN.pdf)
+
+Cartus AR, Bodnar LM, **Naimi AI**. The impact of undersampling on the predictive performance of logistic regression and machine learning algorithms: A simulation study. *Epidemiology*. 2020 Sep;31(5):e42-e44. [PDF](files/publications/Cartus_et_al_2020_Epidemiology.pdf)
+
+**Naimi AI**. Commentary: Obtaining Actionable Inferences from Epidemiologic Actions. *Epidemiology*. 2019 Mar;30(2):243-245. [PDF](files/publications/Naimi_2019_Epidemiology.pdf)
+
+**Naimi AI**, Balzer L. Stacked Generalization: An Introduction to Super Learning. *European Journal of Epidemiology*. 2018. 33(5):459-464. [PDF](files/publications/Naimi_and_Balzer_2018_EJE.pdf)
+
+Larkin JC, **Naimi AI**. Effect of population-specific birthweight curves on disparities in perinatal mortality in small-for-gestational age pregnancies. *American Journal of Perinatology*. 35(7):695-702. [PDF](files/publications/Naimi_et_al_Epidmeiol_2018.pdf)
+
+**Naimi AI**. Commentary: Integrating Complex Systems Thinking into Epidemiologic Research. *Epidemiology*. 2016; 27(6): 843-7. [PDF](files/publications/Naimi_2016_Epidemiol.pdf)
+
+**Naimi AI**, Cole SR, Kennedy EH. An introduction to g methods. *International Journal of Epidemiology*. 2017; 46(2): 756-762. [PDF](files/publications/Naimi_et_al_2017_IJE.pdf)
+
+**Naimi AI**. The Counterfactual Implications of Fundamental Cause Theory. *Current Epidemiology Reports*. 2016; 3(1): 92-97. [PDF](files/publications/Naimi_2016_CER.pdf)
+
+**Naimi AI**, Auger N. Cumulative risk of stillbirth in the presence of competing events. *BJOG*. 2016; 123(7): 1071-4. [PDF](files/publications/Naimi_&_Auger_BJOG_2016.pdf)
+
+**Naimi AI**, Schnitzer ME, Moodie EE, Bodnar LM. Mediation Analysis for Health Disparities Research. *American Journal of Epidemiology*. 2016; 184(4): 315-24. [PDF](files/publications/Naimi_et_al_2016_AJE.pdf)
+
+**Naimi AI**. Invited Commentary: Boundless Science: Putting Natural Direct and Indirect Effects in a Clearer Empirical Context. *American Journal of Epidemiology*. 2015; 182(2):109-14. [PDF](files/publications/Naimi_2015_AJE.pdf)
+
+**Naimi AI**, Tchetgen Tchetgen EJ. Invited Commentary: Estimating Population Impact in the Presence of Competing Events. *American Journal of Epidemiology*. 2015; 181(8):571-4. [PDF](files/publications/Naimi_&_Tchetgen_Tchetgen_2015_AJE.pdf)
+
+**Naimi AI**, Kaufman JS. Invited Review: Counterfactual Theory in Social Epidemiology: Reconciling Analysis and Action for the Social Determinants of Health. *Current Epidemiology Reports*. 2015; 2(1):52-60. [PDF](files/publications/Naimi_and_Kaufman_2015_CER.pdf)
+
+**Naimi AI**, Moodie EE, Auger N, Kaufman JS. Semiparametric Adjusted Exposure-Response Curves. *Epidemiology*. 2014; 25(6):919-22. [PDF](files/publications/Naimi_et_al_2014a_Epidemiol.pdf)
+
+**Naimi AI**, Moodie EE, Auger N, Kaufman JS. Stochastic mediation contrasts in epidemiologic research: Interpregnancy interval and the educational disparity in preterm delivery. *American Journal of Epidemiology*. 2014; 180(4): 436-45. [PDF](files/publications/Naimi_et_al_2014_AJE.pdf)
+
+Keil A, Edwards J, Richardson DB, **Naimi AI**, Cole SR. The Parametric g-Formula for Time-to-event Data: Intuition and a Worked Example. *Epidemiology*. 2014; 25(6): 889-897. [PDF](files/publications/Naimi_et_al_2014_Epid.pdf)
+
+**Naimi AI**, Kaufman JS, MacLehose RF. Mediation Misgivings: Ambiguous Clinical and Public Health Interpretations of Natural Direct and Indirect Effects. *International Journal of Epidemiology*. 2014; 43(5):1656-61. [PDF](files/publications/Naimi_et_al_2014_IJE.pdf)
+
+**Naimi AI**, Moodie EE, Auger N, Kaufman JS. Constructing Inverse Probability Weights for Continuous Exposures: A Comparison of Methods. *Epidemiology*. 2014; 25:292-299. [PDF](files/publications/Naimi_et_al_2014b_Epidemiol.pdf)
+
+**Naimi AI**, Richardson DB, Cole SR. Causal Inference in Occupational Epidemiology: Accounting for the Healthy Worker Effect by Using Structural Nested Models. *American Journal of Epidemiology*. 2013; 178(12):1681-1686. [PDF](files/publications/Naimi_et_al_2013_AJE.pdf)
+
+Cole SR, Richardson DB, Chu H, **Naimi AI**. Analysis of occupational asbestos exposure and lung cancer mortality using the G formula. *American Journal of Epidemiology*. 2013; 177(9): 989-996. [PDF](files/publications/Cole_et_al_2013_AJE.pdf)
+
+**Naimi AI**, Cole SR, Westreich DJ, Richardson DB. Reply Re: A comparison of methods to estimate the hazard ratio with time varying confounding and nonpositivity. *Epidemiology*. 2012; 23(1): 179. [PDF](files/publications/Naimi_&_Westreich_2014_AJE.pdf)
+
+Herring AH, **Naimi AI**. Invited Commentary: The Ecological Design. *British Journal of Obstetrics and Gynaecology*. 2012;119(13): 1638-1639. [PDF](files/publications/Herring_&_Naimi_2012_BJOG.pdf)
+
+**Naimi AI**, Kaufman JS, Howe CJ, Robinson WB. Letter: Mediation Considerations: serum potassium and the racial disparity in diabetes risk. *American Journal of Clinical Nutrition*. 2011; 94(2):614-6. [PDF](files/publications/Naimi_et_al_2011_AJCN.pdf)
+
+<br>
+
+---
+
+<br>
+
+## AJE Classroom Articles
+
+**Naimi AI**, Whitcomb BW. Inferential Statistics and Direct versus Inverse Problems. Accepted for Publication March 13 2025. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2025c_AJE.pdf)
+
+Zivich PN, **Naimi AI**. A Primer on Neural Networks. *American Journal of Epidemiology*. Accepted for Publication July 30 2024. [PDF](files/publications/classroom/Zivich_and_Naimi_2025_AJE.pdf)
+
+**Naimi AI**, Whitcomb BE. Inverse Probability Weighting for Categorical Exposures. *American Journal of Epidemiology*. Advance access publication date March 7, 2025. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2025b_AJE.pdf)
+
+Banack HR, Mayeda ER, Fox MP, **Naimi AI**, Whitcomb BE. Collider Stratification Bias II: Magnitude of Bias. *American Journal of Epidemiology*. 2025;194:1149–1151 [PDF](files/publications/classroom/Banack_et_al_2025_AJE.pdf)
+
+Whitcomb BE, **Naimi AI**. Interaction in Theory and in Practice: Evaluating Combinations of Exposures in Epidemiologic Research. *American Journal of Epidemiology*. 2023 Jun 2;192(6):845-848. [PDF](files/publications/classroom/Whitcomb_and_Naimi_2023_AJE.pdf)
+
+Banack HR, Mayeda ER, **Naimi AI**, Fox MP, Whitcomb BE. Collider Stratification Bias I: Principles and Structure. *American Journal of Epidemiology*. 2023 Oct 10:kwad203. [PDF](files/publications/classroom/Banack_et_al_2023_AJE.pdf)
+
+**Naimi AI**, Whitcomb BE. Defining and Identifying Local Average Treatment Effects. *American Journal of Epidemiology*. 2024;193:935–937. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2024_AJE.pdf)
+
+**Naimi AI**, Whitcomb BE. Defining and Identifying Average Treatment Effects. *American Journal of Epidemiology*. 2023 May 5;192(5):685-687. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2025_AJE.pdf)
+
+**Naimi AI**, Whitcomb BW. Simple Approaches for Dealing with Correlated Data. *American Journal of Epidemiology*. 2023 Apr 6;192(4):507-509. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2023_AJE.pdf)
+
+Whitcomb BE, **Naimi AI**. Defining, quantifying, and interpreting 'noncollapsibility' in epidemiologic studies of measures of effect. *American Journal of Epidemiology*. 2021;190(5):697-700. [PDF](files/publications/classroom/Whitcomb_and_Naimi_2021_AJE.pdf)
+
+**Naimi AI**, Whitcomb BW. Estimating Risk Ratios and Risk Differences using Regression. *American Journal of Epidemiology*. 2020;189(6):508-510. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2020_AJE.pdf)
+
+Whitcomb BW, **Naimi AI**. Things don't always go as expected: the example of non-differential misclassification of exposure -- bias and error. *American Journal of Epidemiology*. 2020;189(5):365-368. [PDF](files/publications/classroom/Whitcomb_and_Naimi_2021b_AJE.pdf)
+
+**Naimi AI**, Whitcomb BW. Can confidence intervals be interpreted? *American Journal of Epidemiology*. 2020;189(7):631-633. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2020b_AJE.pdf)
