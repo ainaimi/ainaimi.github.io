@@ -9,6 +9,7 @@ title: "Team"
 | Amanda Dorsey | PhD | [To be added] | PhD Student |
 | Oluseye Ogunmoroti | PhD | [To be added] | PhD Student |
 | Zhaohua Zheng | PhD | [To be added] | PhD Student |
+| Camila Diaz | MPH | [To be added] | MPH Student |
 | Erin Rogers | PhD | Mediation for opioid use disorder during the perinatal period; effectiveness of buprenorphine versus methadone on the risk of overdose in pregnancy | [To be added] |
 | Mundayi Nlandu | MPH | Machine learning algorithms to evaluate predictors of stillbirth; fetal to placental weight ratios as a marker of stillbirth in Norway | ORISE Fellow, Centers for Disease Control and Prevention |
 | Jackie Rudolph | Postdoc | Advanced causal inference methods for reproductive, HIV/AIDS, and environmental epidemiology; causal intervention analysis, competing events, simulation, and generalization | Assistant Scientist in Epidemiology, Johns Hopkins University |
