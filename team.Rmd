@@ -4,96 +4,16 @@ title: "Team"
 
 <br>
 
-## Current Students
-
----
-
-<img src="figures/dorsey.jpg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
-
-**Amanda Dorsey** is a PhD student in Epidemiology at Emory University.
-
-<br>
-<br>
-<br>
-
----
-
-<img src="figures/ogunmoroti.jpg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
-
-**Oluseye Ogunmoroti** is a PhD student in Epidemiology at Emory University.
+| Name | Degree | Dissertation/Thesis | Current Position |
+|------|--------|---------------------|------------------|
+| Amanda Dorsey | PhD | [To be added] | PhD Student |
+| Oluseye Ogunmoroti | PhD | [To be added] | PhD Student |
+| Zhaohua Zheng | PhD | [To be added] | PhD Student |
+| Erin Rogers | PhD | Mediation for opioid use disorder during the perinatal period; effectiveness of buprenorphine versus methadone on the risk of overdose in pregnancy | [To be added] |
+| Mundayi Nlandu | MPH | Machine learning algorithms to evaluate predictors of stillbirth; fetal to placental weight ratios as a marker of stillbirth in Norway | ORISE Fellow, Centers for Disease Control and Prevention |
+| Jackie Rudolph | Postdoc | Advanced causal inference methods for reproductive, HIV/AIDS, and environmental epidemiology; causal intervention analysis, competing events, simulation, and generalization | Assistant Scientist in Epidemiology, Johns Hopkins University |
+| Gabriel Conzuelo | PhD | Machine learning methods for effect measure modification, transportability of causal effects in randomized trials, and measurement error correction in perinatal epidemiology | Research Associate, Basic Health International, Pittsburgh, PA |
+| Yongqi Zhong | PhD | Causal inference, causal discovery, graphical models, machine learning; applying advanced methods in observational studies and randomized trials | Senior Biostatistician, GRAIL, LLC |
+| Ya-Hui Yu | PhD | Conceptual and methodological challenges on quantifying the impact of maternal incident obesity on perinatal mortality | Assistant Professor of Epidemiology, Georgia State University |
 
 <br>
-<br>
-<br>
-
----
-
-<img src="figures/zheng.jpg" style="width:25%; border:1px solid; margin-right: 20px" align="left">
-
-**Zhaohua Zheng** is a PhD student in Epidemiology at Emory University.
-
-<br>
-<br>
-<br>
-
----
-
-<br>
-
-## Former Members
-
----
-
-<img src="figures/Rogers2.jpg" style="width:15%; border:1px solid; margin-right: 20px" align="left">
-
-**Erin Rogers** completed a PhD in Epidemiology at Emory University. Her research focused on mediation for opioid use disorder during the perinatal period. She used tools for emulating randomized trials with real-world pharmacoepidemiologic data to evaluate the effectiveness of buprenorphine versus methadone on the risk of overdose in pregnancy. She was a fellow of the Training in Advanced Analytics to End Drug Related Harms (TADA) training program.
-
-<br>
-<br>
-
----
-
-<img src="figures/Nlandu2.jpg" style="width:15%; border:1px solid; margin-right: 20px" align="left">
-
-**Mundayi Nlandu** completed an MPH in Epidemiology at Emory University. Her research focused on developing and deploying machine learning algorithms to evaluate the relative roles of basic demographic, clinical, and reproductive markers as predictors of stillbirth in a population of pregnant women in Norway. Her work focused particularly on the role of fetal to placental weight ratios as a marker of stillbirth in the Norway population. She is currently an ORISE Fellow at the Centers for Disease Control and Prevention.
-
-<br>
-<br>
-
----
-
-<img src="figures/Rudolph.jpg" style="width:15%; border:1px solid; margin-right: 20px" align="left">
-
-**Jackie Rudolph** completed a Post-Doctoral Research Fellowship in Epidemiology at Emory University. Her research focused on applying advanced causal inference methods to address challenges in reproductive, HIV/AIDS, and Environmental epidemiology. She worked extensively on methods for causal intervention analysis, competing events, simulation, and generalization (transportability). She is currently Assistant Scientist in Epidemiology at Johns Hopkins University.
-
-<br>
-<br>
-
----
-
-<img src="figures/conzuelo.jpeg" style="width:15%; border:1px solid; margin-right: 20px" align="left">
-
-**Gabriel Conzuelo** completed his PhD in Epidemiology at University of Pittsburgh. His dissertation focused on machine learning methods for effect measure modification, transportability of causal effects in randomized trials, and measurement error correction in complex longitudinal data, all in perinatal epidemiology and women's health. He is currently a Research Associate at Basic Health International in Pittsburgh, PA.
-
-<br>
-<br>
-
----
-
-<img src="figures/zhong.jpg" style="width:15%; border:1px solid; margin-right: 20px" align="left">
-
-**Yongqi Zhong** completed a PhD in Epidemiology at the University of Pittsburgh, with a focus on causal inference, causal discovery, graphical models, machine learning and coding. His research focused on applying advanced methods in observational studies and randomized trials. He completed a post-doctoral research fellowship at Johns Hopkins University with Drs Liz Stuart and Bryan Lau. He is currently a Senior Biostatistician at GRAIL, LLC.
-
-<br>
-<br>
-
----
-
-<img src="figures/yu.jpg" style="width:15%; border:1px solid; margin-right: 20px" align="left">
-
-**Ya-Hui Yu** obtained her Ph.D in Epidemiology at University of Pittsburgh in 2018. Her dissertation focused on conceptual and methodological challenges on quantifying the impact of maternal incident obesity on perinatal mortality. She completed a postdoctoral researcher at McGill University, working with Dr Robert Platt and Dr Kristian Fillion. She is currently Assistant Professor of Epidemiology at Georgia State University.
-
-<br>
-<br>
-
----
