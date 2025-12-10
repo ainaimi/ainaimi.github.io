@@ -1,18 +1,21 @@
+---
+title: "Resources"
+---
 
 <br>
+
+## Reading Lists
+
+- [Machine Learning Reading List](https://ainaimi.github.io/resources/reading_list_ML.html)
+
+- [Causal Inference Reading List](https://ainaimi.github.io/resources/reading_list_CI.html)
+
+- [Monte Carlo Simulation Reading List](https://ainaimi.github.io/resources/reading_list_MCSim.html)
+
 <br>
+
+## Computing Resources
+
+- [Accessing the Rollins Computing Cluster](https://ainaimi.github.io/resources/computing.html)
+
 <br>
-
-Relevant resources can be found on this webpage: 
-
-- Materials for the [IMCS SER Shortcourse](https://ainaimi.github.io/resources/SER2024.html).
-
-- Some things I do to set up macOS for [Scientific Computing](https://ainaimi.github.io/resources/ComputerSetup.html).
-
-- [Machine Learning Reading List](https://ainaimi.github.io/resources/reading_list_ML.html) here.
-
-- [Causal Inference Reading List](https://ainaimi.github.io/resources/reading_list_CI.html) here.
-
-- [Monte Carlo Simulation Reading List](https://ainaimi.github.io/resources/reading_list_MCSim.html) here.
-
-- A short guide on [Accessing the Rollins Computing Cluster](https://ainaimi.github.io/resources/computing.html).
