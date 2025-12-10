@@ -19,8 +19,6 @@ navbar:
       href: https://twitter.com/ashley_naimi
     - icon: ai ai-google-scholar-square ai-2x
       href: https://scholar.google.com/citations?user=hA7DPuMAAAAJ&hl=en
-    - icon: fab fa-stack-overflow fa-2x
-      href: https://stats.stackexchange.com/users/79490/ashley-naimi
 output:
   html_document:
     css:
