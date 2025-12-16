@@ -4,11 +4,6 @@ title: "Select Publications"
 
 <br>
 
-## Forthcoming
-
-
-## Published
-
 **Naimi AI**, Benkeser D, Rudolph JE. Computing True Parameter Values in Simulation Studies Using Monte Carlo Integration. *Epidemiology*. Accepted March 11 2025. [PDF](files/publications/Naimi_et_al_2025_Epidemiology.pdf)
 
 Zheng Z, Kennedy EH, Bodnar LM, **Naimi AI**. Efficient Generalization and Transportation. *Statistical Science*. Accepted for Publication, Dec 29 2024. [PDF](files/publications/Zheng_et_al_2025_Statistical_Science.pdf)
@@ -95,7 +90,7 @@ Herring AH, **Naimi AI**. Invited Commentary: The Ecological Design. *British Jo
 
 ## AJE Classroom Articles
 
-**Naimi AI**, Whitcomb BW. Inferential Statistics and Direct versus Inverse Problems. Accepted for Publication March 13 2025. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2025c_AJE.pdf)
+**Naimi AI**, Whitcomb BW. Inferential Statistics and Direct versus Inverse Problems. Accepted for Publication March 13 2025. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2025_AJE.pdf)
 
 Zivich PN, **Naimi AI**. A Primer on Neural Networks. *American Journal of Epidemiology*. Accepted for Publication July 30 2024. [PDF](files/publications/classroom/Zivich_and_Naimi_2025_AJE.pdf)
 

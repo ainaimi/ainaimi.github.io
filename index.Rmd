@@ -49,16 +49,6 @@ I teach courses in epidemiologic methods, data science, causal inference, and qu
 [Learn more about my teaching →](teaching.html)
 
 <br>
-
-## In the News
-
-My research has been featured in various media outlets, including coverage of work on pregnancy outcomes and reproductive health:
-
-- **The New York Times**: "A 'Baby' Aspirin a Day May Help Prevent a Second Pregnancy Loss" ([read more](https://www.nytimes.com/2021/01/27/well/family/aspirin-pregnancy-miscarriage.html))
-
-- **U.S. News and World Report**: "For Women Who've Miscarried, Aspirin Before, During Pregnancy Could Improve Outcomes" ([read more](https://www.usnews.com/news/health-news/articles/2021-01-26/for-women-whove-miscarried-aspirin-before-during-pregnancy-could-improve-outcomes))
-
-<br>
 <br>
 
 ___
