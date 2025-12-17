@@ -21,6 +21,7 @@ navbar:
       href: https://scholar.google.com/citations?user=hA7DPuMAAAAJ&hl=en
 output:
   html_document:
+    theme: simplex
     css:
      - https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css
-     - 'styles_modern.css'
+     - custom.css

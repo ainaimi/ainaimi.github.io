@@ -1,0 +1,72 @@
+/* Increase text size - using highly specific selectors */
+html {
+    font-size: 18px !important;
+}
+
+body {
+    font-size: 18px !important;
+}
+
+.main-container,
+.container,
+#main {
+    font-size: 18px !important;
+}
+
+/* Target all paragraph and text elements specifically */
+p,
+.container p,
+.main-container p,
+div.container p,
+div.main-container p {
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+}
+
+/* Headings */
+h1, .container h1, .main-container h1 {
+    font-size: 2.5rem !important;
+}
+
+h2, .container h2, .main-container h2 {
+    font-size: 2rem !important;
+}
+
+h3, .container h3, .main-container h3 {
+    font-size: 1.5rem !important;
+}
+
+/* Other text elements */
+div, span, td, th, li {
+    font-size: 18px !important;
+}
+
+/* Change colors from red to blue */
+a {
+    color: #2563eb;
+}
+
+a:hover {
+    color: #1e40af;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #2563eb;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #2563eb;
+}
+
+/* Change any red accents to blue */
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
