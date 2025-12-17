@@ -13,6 +13,8 @@ My work focuses on developing, evaluating, and applying advanced quantitative me
 <br>
 <br>
 <br>
+<br>
+<br>
 
 ## Research
 
@@ -24,7 +26,7 @@ I am increasingly interested in questions about science, data science, and stati
 
 <br>
 
-## Consulting
+<!-- ## Consulting
 
 I provide statistical and methodological consulting for academic researchers, government agencies, companies, and other organizations. My expertise includes:
 
@@ -36,7 +38,7 @@ I provide statistical and methodological consulting for academic researchers, go
 
 If you're interested in consulting services, feel free to [reach out via email](mailto:ashley.naimi@emory.edu).
 
-<br>
+<br> -->
 
 ## Teaching
 
