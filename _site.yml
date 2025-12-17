@@ -1,10 +1,8 @@
 name: "Ashley I. Naimi"
 output_dir: "."
 navbar:
-  title: "Ashley I. Naimi"
+  title: "Home"
   left:
-    - text: "Home"
-      href: index.html
     - text: "Team"
       href: team.html
     - text: "Publications"
