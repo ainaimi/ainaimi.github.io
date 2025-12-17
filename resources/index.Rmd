@@ -1,0 +1,26 @@
+---
+title: "Resources"
+---
+
+<br>
+
+Here you will find resources and reading lists:
+
+## Computing Resources
+
+[Accessing and Using Rollins HPC](computing.html)
+
+[Computer Setup Guide](ComputerSetup.html)
+
+## Reading Lists
+
+[Causal Inference](reading_list_CI.html)
+
+[Machine Learning](reading_list_ML.html)
+
+[Intention-to-Treat and Beyond](reading_list_ITB.html)
+
+[Monte Carlo Simulation](reading_list_MCSim.html)
+
+[Fairness in Machine Learning](reading_list_fairness.html)
+
