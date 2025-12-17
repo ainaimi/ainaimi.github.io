@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Machine Learning Reading List</title>
+
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" type="text/css" />
+<link rel="stylesheet" href="../custom.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="../publications.html">Publications</a>
+</li>
+<li>
+  <a href="../access.html">Resources</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:ashley.naimi@emory.edu">
+    <span class="fa fa-envelope fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/ainaimi">
+    <span class="fab fa-github fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/ashley_naimi">
+    <span class="fab fa-twitter fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=hA7DPuMAAAAJ&amp;hl=en">
+    <span class="ai ai ai ai-google-scholar-square ai-2x"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Machine Learning Reading List</h1>
+
+</div>
+
+
+<p><br></p>
+<div id="articles" class="section level2">
+<h2>Articles</h2>
+<ul>
+<li><p><strong>Breiman L. <a
+href="https://projecteuclid.org/euclid.ss/1009213726">Statistical
+Modeling: The Two Cultures</a>. <em>Statistical Science</em>.
+2001;16(3):199-231.</strong></p>
+<p>Seminal work on the distinction between classical statistical
+modeling and algorithmic modeling approaches. Breiman argues that the
+statistical community has been too focused on data modeling at the
+expense of algorithmic modeling, which has proven more effective for
+prediction.</p></li>
+<li><p><strong>Bi Q, Goodman KE, Kaminsky J, Lessler J. <a
+href="https://academic.oup.com/aje/article/188/12/2222/5486372">What is
+Machine Learning?: A Primer for Epidemiologists</a>. <em>American
+Journal of Epidemiology</em>. 2019;188(12):2222-2239.</strong></p>
+<p>Excellent introduction to machine learning concepts and issues
+specifically tailored for epidemiologists. Covers the fundamentals of ML
+algorithms, their applications in epidemiology, and important
+considerations when using these methods in public health
+research.</p></li>
+<li><p><strong>Naimi AI, Balzer LB. <a
+href="https://link.springer.com/article/10.1007/s10654-018-0390-z">Stacked
+Generalization: An Introduction to Super Learning</a>. <em>European
+Journal of Epidemiology</em>. 2018;33(5):459-464.</strong></p>
+<p>Demonstrates the fundamentals behind the super learner algorithm.
+This paper provides an accessible introduction to ensemble learning and
+explains how super learning can be used to optimize prediction by
+combining multiple algorithms.</p></li>
+<li><p><strong>Kennedy CJ. <a
+href="https://cran.r-project.org/web/packages/SuperLearner/vignettes/Guide-to-SuperLearner.html">Guide
+to Super Learner</a>. R Package Vignette. 2017.</strong></p>
+<p>Detailed practical resource on implementing super learner in real
+data settings. This vignette walks through the R implementation
+step-by-step and provides excellent guidance on selecting algorithms,
+tuning parameters, and interpreting results.</p></li>
+<li><p><strong>Chouldechova A. <a
+href="https://arxiv.org/abs/1610.07524">Fair prediction with disparate
+impact: a study of bias in recidivism prediction instruments</a>.
+<em>Big Data</em>. 2017;5(2):153-163.</strong></p>
+<p>Important example of fundamental constraints on using algorithms to
+predict outcomes fairly. This paper demonstrates the mathematical
+impossibility of satisfying all fairness criteria simultaneously and has
+profound implications for deploying ML in criminal justice and other
+high-stakes domains.</p></li>
+<li><p><strong>Mullainathan S, Spiess J. <a
+href="https://www.aeaweb.org/articles?id=10.1257/jep.31.2.87">Machine
+learning: an applied econometric approach</a>. <em>Journal of Economic
+Perspectives</em>. 2017;31(2):87-106.</strong></p>
+<p>Excellent introduction to machine learning with emphasis on
+econometrics, very useful for epidemiologists. The authors frame ML as a
+set of tools for prediction problems and clearly explain how these
+methods differ from and complement traditional econometric
+approaches.</p></li>
+<li><p><strong>Caruana R, Lou Y, Gehrke J, Koch P, Sturm M, Elhadad N.
+<a href="https://dl.acm.org/doi/10.1145/2783258.2788613">Intelligible
+Models for HealthCare: Predicting Pneumonia Risk and Hospital 30-day
+Readmission</a>. In: <em>Proceedings of the 21st ACM SIGKDD
+International Conference on Knowledge Discovery and Data Mining</em>.
+New York, NY: ACM; 2015:1721-1730.</strong></p>
+<p>Important example of how ML algorithms can yield misleading
+predictions when deeper data-modeling complexities aren’t considered.
+The authors show that a neural network learned that asthma is protective
+for pneumonia mortality because asthmatic patients receive more
+aggressive treatment—highlighting the critical importance of
+interpretability in healthcare ML.</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="books" class="section level2">
+<h2>Books</h2>
+<ul>
+<li><p><strong>Burkov A. <a href="http://themlbook.com/">The Hundred
+Page Machine Learning Book</a>. Quebec City, Canada: Self-published;
+2019.</strong></p>
+<p>Concise, accessible introduction to core ML concepts. Despite its
+brevity, this book covers supervised learning, neural networks, and
+common ML algorithms with remarkable clarity. Perfect for getting up to
+speed quickly without getting bogged down in mathematical
+details.</p></li>
+<li><p><strong>Burkov A. <a href="http://www.mlebook.com/">Machine
+Learning Engineering</a>. Quebec City, Canada: True Positive Inc.;
+2020.</strong></p>
+<p>Practical guide to productionizing ML systems. Goes beyond model
+training to cover data pipelines, model deployment, monitoring, and
+maintenance. Essential reading for anyone who needs to put ML models
+into production.</p></li>
+<li><p><strong>Kuhn M, Johnson K. <a
+href="https://link.springer.com/book/10.1007/978-1-4614-6849-3">Applied
+Predictive Modeling</a>. New York, NY: Springer; 2013.</strong></p>
+<p>Comprehensive practical guide to predictive modeling techniques.
+Covers the entire modeling workflow from preprocessing through model
+evaluation with extensive R code examples. The emphasis on practical
+considerations makes this invaluable for applied work.</p></li>
+<li><p><strong>Mitchell M. <a
+href="https://melaniemitchell.me/aibook/">Artificial Intelligence: A
+Guide for Thinking Humans</a>. New York, NY: Farrar, Straus and Giroux;
+2019.</strong></p>
+<p>Essential reading on AI from a thoughtful, critical perspective.
+Mitchell, a leading AI researcher, provides a balanced view of what AI
+can and cannot do, addressing both the promise and limitations of
+current approaches. Accessible to general readers while maintaining
+technical rigor.</p></li>
+<li><p><strong>Broussard M. <a
+href="https://mitpress.mit.edu/9780262537018/artificial-unintelligence/">Artificial
+Unintelligence: How Computers Misunderstand the World</a>. Cambridge,
+MA: MIT Press; 2018.</strong></p>
+<p>Important critique of how algorithms fail to understand context and
+nuance. Broussard, a data journalist, examines cases where technological
+solutions have failed and argues persuasively that many problems require
+human judgment rather than algorithmic solutions.</p></li>
+<li><p><strong>Wasserman L. <a
+href="https://link.springer.com/book/10.1007/0-387-30623-4">All of
+Nonparametric Statistics</a>. New York, NY: Springer; 2006.</strong></p>
+<p>Comprehensive theoretical foundation for nonparametric methods.
+Covers density estimation, regression, inference, and testing with
+mathematical rigor. Essential for understanding the statistical theory
+underlying many modern ML methods.</p></li>
+<li><p><strong>Shalev-Shwartz S, Ben-David S. <a
+href="https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/">Understanding
+Machine Learning: From Theory to Algorithms</a>. New York, NY: Cambridge
+University Press; 2014.</strong></p>
+<p>Rigorous theoretical treatment of ML fundamentals. Covers
+computational learning theory, overfitting, regularization, and model
+selection with formal proofs. The free PDF version makes this accessible
+to anyone wanting to understand ML theory deeply.</p></li>
+<li><p><strong>Efron B, Hastie T. <a
+href="https://web.stanford.edu/~hastie/CASI/">Computer Age Statistical
+Inference: Algorithms, Evidence, and Data Science</a>. New York, NY:
+Cambridge University Press; 2016.</strong></p>
+<p>Modern perspective connecting classical and contemporary statistical
+methods. Traces the evolution from early 20th century statistics through
+bootstrap methods to modern ML. Provides historical context that helps
+understand why certain methods work.</p></li>
+<li><p><strong>Hastie T, Tibshirani R, Friedman J. <a
+href="https://hastie.su.domains/ElemStatLearn/">Elements of Statistical
+Learning: Data Mining, Inference, and Prediction</a>. 2nd ed. New York,
+NY: Springer; 2009.</strong></p>
+<p>Classic comprehensive reference on statistical learning methods. The
+definitive technical resource covering supervised learning, model
+selection, inference, and unsupervised learning. Dense but invaluable
+for serious practitioners.</p></li>
+<li><p><strong>James G, Witten D, Hastie T, Tibshirani R. <a
+href="https://www.statlearning.com/">An Introduction to Statistical
+Learning: with Applications in R</a>. 2nd ed. New York, NY: Springer;
+2021.</strong></p>
+<p>Accessible introduction to statistical learning with R examples. More
+approachable than Elements of Statistical Learning while covering
+similar material. Excellent for self-study with exercises and datasets
+provided online.</p></li>
+</ul>
+<p><br></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

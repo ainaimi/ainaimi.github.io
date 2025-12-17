@@ -1,0 +1,53 @@
+---
+title: "Monte Carlo Simulation Reading List"
+---
+
+<br>
+
+## Articles
+
+- **Morris TP, White IR, Crowther MJ. [Using simulation studies to evaluate statistical methods](https://onlinelibrary.wiley.com/doi/10.1002/sim.8086). *Statistics in Medicine*. 2019;38(11):2074-2102.**
+
+  Comprehensive guide to designing and reporting simulation studies. Covers all aspects from setting aims to choosing performance measures and presenting results. Essential reading for anyone planning a simulation study.
+
+- **Maldonado G, Greenland S. [The importance of critically interpreting simulation studies](https://journals.lww.com/epidem/abstract/1997/07000/the_importance_of_critically_interpreting.17.aspx). *Epidemiology*. 1997;8(4):453-456.**
+
+  Brief but important commentary on how to critically evaluate simulation studies. Emphasizes that simulation results depend entirely on assumptions and highlights common pitfalls in interpretation.
+
+- **Rudolph JE, Fox MP, Naimi AI. [Simulation as a Tool for Teaching and Learning Epidemiologic Methods](https://academic.oup.com/aje/article/190/5/900/6039889). *American Journal of Epidemiology*. 2021;190(5):900-907.**
+
+  Practical guide to using simulation for pedagogy in epidemiology. Explains how simulation can build intuition about statistical concepts and provides examples of teaching applications.
+
+- **Burton A, Altman DG, Royston P, Holder RL. [The design of simulation studies in medical statistics](https://onlinelibrary.wiley.com/doi/10.1002/sim.2673). *Statistics in Medicine*. 2006;25(24):4279-4292.**
+
+  Detailed recommendations for planning simulation studies in medical statistics. Covers sample size determination, number of simulations needed, and how to structure simulation experiments.
+
+- **Mooney C. [Conveying truth with the artificial: using simulated data to teach statistics in social sciences](https://journals.sagepub.com/doi/10.1177/089443939500100107). *Social Science Computer Review*. 1995;13(1):1-5.**
+
+  Early paper on using simulation for teaching statistics. Makes the case that simulation helps students understand abstract statistical concepts by making them concrete and manipulable.
+
+- **Hodgson T, Burke M. [On simulation and the teaching of statistics](https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-9639.00031). *Teaching Statistics*. 2000;22(3):91-96.**
+
+  Practical discussion of how simulation can enhance statistics education. Focuses on how simulation helps students develop statistical intuition and understand sampling distributions.
+
+<br>
+
+## Notes and Slides
+
+- **[NC State Simulation Notes](https://www4.stat.ncsu.edu/~davidian/st810a/simulation_handout.pdf)**
+
+  Notes from a statistics course at NC State. Includes useful equations for calculating simulation error and other estimands. Good technical reference for simulation methodology.
+
+- **[Emory Simulation Lecture](https://ainaimi.github.io/resources/Simulation_slides.html)**
+
+  Introductory lecture slides on simulation from Emory. Provides accessible overview of simulation concepts and applications in epidemiology.
+
+<br>
+
+## Books
+
+- **Casella G, Robert CP. [Monte Carlo Statistical Methods](https://link.springer.com/book/10.1007/978-1-4757-4145-2). 2nd ed. New York, NY: Springer; 2004.**
+
+  Technical and challenging text, but chapters 1-3 provide excellent foundation in Monte Carlo methods. Covers random variable generation, Monte Carlo integration, and variance reduction techniques. Best suited for readers with strong mathematical background.
+
+<br>

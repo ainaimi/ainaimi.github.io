@@ -1,0 +1,101 @@
+---
+title: "Causal Inference Reading List"
+---
+
+<br>
+
+## Introductory Articles
+
+- **Hernán MA. [Does water kill? A call for less casual causal inferences](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5207342/). *Annals of Epidemiology*. 2016;26(10):674-680.**
+
+  A thought-provoking critique of how causal language is used in epidemiology. Hernán uses a deliberately absurd example to demonstrate how loose causal interpretations can lead to misleading conclusions, emphasizing the need for more rigorous causal reasoning.
+
+- **Naimi AI, Whitcomb BW. [Defining and Identifying Average Treatment Effects](https://academic.oup.com/aje/article/192/5/685/6910872). *American Journal of Epidemiology*. 2023;192(5):685-687.**
+
+  Clear explanation of what average treatment effects are and how to identify them from data. This classroom article provides accessible definitions and conditions needed for causal inference, making it an excellent starting point for understanding treatment effects.
+
+- **Naimi AI, Whitcomb BW. [Defining and Identifying Local Average Treatment Effects](https://academic.oup.com/aje/article/193/6/935/7589347). *American Journal of Epidemiology*. 2024;193(6):935-937.**
+
+  Extension of ATE concepts to instrumental variables and complier average causal effects. This article clarifies the local average treatment effect (LATE) framework and when it applies in practice.
+
+- **VanderWeele TJ, Hernán MA. [Causal Inference Under Multiple Versions of Treatment](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4276366/). *Journal of Causal Inference*. 2013;1(1):1-20.**
+
+  Important paper addressing what happens when treatments vary in ways not captured by a single variable. Introduces the concept of treatment version irrelevance and discusses implications for interpreting causal effects.
+
+- **Murray EJ, et al. [Causal survival analysis: A guide to estimating intention-to-treat and per-protocol effects from randomized clinical trials with non-adherence](https://pubmed.ncbi.nlm.nih.gov/33208962/). *Research Methods in Medicine & Health Sciences*. 2021;2(1):39-49.**
+
+  Practical guide to analyzing survival data from trials with non-adherence. Explains how to estimate both intention-to-treat and per-protocol effects using g-methods, with clear worked examples.
+
+- **Dablander F. [Introduction to Causal Inference](https://osf.io/preprints/psyarxiv/b3fkw). Preprint. 2020.**
+
+  Accessible introduction to causal inference from a psychological perspective. Covers potential outcomes, DAGs, and various identification strategies with helpful visualizations and examples.
+
+- **Naimi AI, Cole SR, Kennedy EH. [An introduction to g methods](https://academic.oup.com/ije/article/46/2/756/2760169). *International Journal of Epidemiology*. 2017;46(2):756-762.**
+
+  Gentle introduction to g-methods (g-formula, inverse probability weighting, g-estimation). Explains the motivation and basic mechanics of these methods for handling time-varying confounding.
+
+- **Glass TA, Goodman SN, Hernán MA, Samet JM. [Causal Inference in Public Health](https://www.annualreviews.org/content/journals/10.1146/annurev-publhealth-031811-124606). *Annual Review of Public Health*. 2013;34:61-75.**
+
+  Overview of causal inference methods in public health contexts. Discusses both the potential outcomes framework and graphical approaches, with attention to practical applications.
+
+- **Greenland S. [For and Against Methodologies: Some Perspectives on Recent Causal and Statistical Inference Debates](https://link.springer.com/article/10.1007/s10654-017-0230-6). *European Journal of Epidemiology*. 2017;32:3-20.**
+
+  Thoughtful commentary on debates between different schools of causal inference. Greenland argues for pragmatic pluralism rather than methodological dogmatism.
+
+<br>
+
+## Intermediate/Advanced Articles
+
+- **Cole SR, Hernán MA. [Constructing Inverse Probability Weights for Marginal Structural Models](https://academic.oup.com/aje/article/168/6/656/145146). *American Journal of Epidemiology*. 2008;168(6):656-664.**
+
+  Detailed guide to constructing IPW for marginal structural models. Covers practical considerations including weight truncation, model selection, and diagnostics. Essential reading for anyone using IPW methods.
+
+- **Greenland S. [Randomization, Statistics, and Causal Inference](https://www.jstor.org/stable/3702552). *Epidemiology*. 1990;1(6):421-429.**
+
+  Classic paper on the role of randomization in causal inference. Greenland clarifies what randomization does and doesn't guarantee, challenging common misconceptions about the relationship between randomization and causality.
+
+- **Diaz I. [Machine learning in the estimation of causal effects: targeted minimum loss-based estimation and double/debiased machine learning](https://academic.oup.com/biostatistics/article/21/2/353/5511769). *Biostatistics*. 2020;21(2):353-358.**
+
+  Overview of modern methods combining machine learning with causal inference. Explains targeted learning and double machine learning, two approaches that allow flexible ML while maintaining valid inference.
+
+<br>
+
+## Introductory Books
+
+- **Hernán MA, Robins JM. [Causal Inference: What If](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/). Boca Raton: Chapman & Hall/CRC; 2023.**
+
+  The definitive modern introduction to causal inference. Covers both the potential outcomes framework and graphical approaches with a focus on epidemiological applications. Available free online. Essential reading.
+
+- **Cunningham S. [Causal Inference: The Mixtape](https://mixtape.scunning.com/). New Haven: Yale University Press; 2021.**
+
+  Highly accessible introduction written for economists but valuable for all. Combines theory with extensive code examples (Stata, R, Python). The free online version includes interactive elements.
+
+- **Pearl J, Glymour M, Jewell NP. [Causal Inference in Statistics: A Primer](https://www.wiley.com/en-us/Causal+Inference+in+Statistics%3A+A+Primer-p-9781119186847). Hoboken, NJ: Wiley; 2016.**
+
+  Gentle introduction to Pearl's structural causal model framework. Emphasizes graphical methods and the do-calculus. Good complement to potential outcomes approaches.
+
+- **Imbens GW, Rubin DB. [Causal Inference for Statistics, Social, and Biomedical Sciences](https://www.cambridge.org/core/books/causal-inference-for-statistics-social-and-biomedical-sciences/71126BE90C58F1A431FE9B2DD07938AB). New York: Cambridge University Press; 2015.**
+
+  Comprehensive treatment of the potential outcomes framework from two of its main developers. Focuses on experimental and quasi-experimental designs with detailed treatment of propensity score methods.
+
+- **VanderWeele TJ. [Explanation in Causal Inference: Methods for Mediation and Interaction](https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870). New York: Oxford University Press; 2015.**
+
+  The definitive text on methods for mediation and interaction analysis. Rigorous yet accessible treatment of decomposing total effects and assessing effect modification.
+
+<br>
+
+## Intermediate/Advanced Texts
+
+- **Pearl J. [Causality: Models, Reasoning, and Inference](https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B). 2nd ed. New York: Cambridge University Press; 2009.**
+
+  Pearl's magnum opus on the structural causal model framework. Introduces directed acyclic graphs, the do-calculus, and counterfactual reasoning. Challenging but foundational for understanding modern causal inference.
+
+- **van der Laan MJ, Rose S. [Targeted Learning: Causal Inference for Observational and Experimental Data](https://link.springer.com/book/10.1007/978-1-4419-9782-1). New York: Springer; 2011.**
+
+  Comprehensive treatment of targeted maximum likelihood estimation and the roadmap for targeted learning. Advanced text combining semiparametric efficiency theory with machine learning for causal inference.
+
+- **Aronow PM, Miller BT. [Foundations of Agnostic Statistics](https://www.cambridge.org/core/books/foundations-of-agnostic-statistics/A3649C923EB91336A8DAA9721C9C4045). New York: Cambridge University Press; 2019.**
+
+  Intermediate/advanced text on statistics with excellent treatment of randomization inference and design-based causal inference in Chapter 7. Rigorous yet accessible approach to inference without distributional assumptions.
+
+<br>

@@ -1,0 +1,81 @@
+---
+title: "Machine Learning Reading List"
+---
+
+<br>
+
+## Articles
+
+- **Breiman L. [Statistical Modeling: The Two Cultures](https://projecteuclid.org/euclid.ss/1009213726). *Statistical Science*. 2001;16(3):199-231.**
+
+  Seminal work on the distinction between classical statistical modeling and algorithmic modeling approaches. Breiman argues that the statistical community has been too focused on data modeling at the expense of algorithmic modeling, which has proven more effective for prediction.
+
+- **Bi Q, Goodman KE, Kaminsky J, Lessler J. [What is Machine Learning?: A Primer for Epidemiologists](https://academic.oup.com/aje/article/188/12/2222/5486372). *American Journal of Epidemiology*. 2019;188(12):2222-2239.**
+
+  Excellent introduction to machine learning concepts and issues specifically tailored for epidemiologists. Covers the fundamentals of ML algorithms, their applications in epidemiology, and important considerations when using these methods in public health research.
+
+- **Naimi AI, Balzer LB. [Stacked Generalization: An Introduction to Super Learning](https://link.springer.com/article/10.1007/s10654-018-0390-z). *European Journal of Epidemiology*. 2018;33(5):459-464.**
+
+  Demonstrates the fundamentals behind the super learner algorithm. This paper provides an accessible introduction to ensemble learning and explains how super learning can be used to optimize prediction by combining multiple algorithms.
+
+- **Kennedy CJ. [Guide to Super Learner](https://cran.r-project.org/web/packages/SuperLearner/vignettes/Guide-to-SuperLearner.html). R Package Vignette. 2017.**
+
+  Detailed practical resource on implementing super learner in real data settings. This vignette walks through the R implementation step-by-step and provides excellent guidance on selecting algorithms, tuning parameters, and interpreting results.
+
+- **Chouldechova A. [Fair prediction with disparate impact: a study of bias in recidivism prediction instruments](https://arxiv.org/abs/1610.07524). *Big Data*. 2017;5(2):153-163.**
+
+  Important example of fundamental constraints on using algorithms to predict outcomes fairly. This paper demonstrates the mathematical impossibility of satisfying all fairness criteria simultaneously and has profound implications for deploying ML in criminal justice and other high-stakes domains.
+
+- **Mullainathan S, Spiess J. [Machine learning: an applied econometric approach](https://www.aeaweb.org/articles?id=10.1257/jep.31.2.87). *Journal of Economic Perspectives*. 2017;31(2):87-106.**
+
+  Excellent introduction to machine learning with emphasis on econometrics, very useful for epidemiologists. The authors frame ML as a set of tools for prediction problems and clearly explain how these methods differ from and complement traditional econometric approaches.
+
+- **Caruana R, Lou Y, Gehrke J, Koch P, Sturm M, Elhadad N. [Intelligible Models for HealthCare: Predicting Pneumonia Risk and Hospital 30-day Readmission](https://dl.acm.org/doi/10.1145/2783258.2788613). In: *Proceedings of the 21st ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. New York, NY: ACM; 2015:1721-1730.**
+
+  Important example of how ML algorithms can yield misleading predictions when deeper data-modeling complexities aren't considered. The authors show that a neural network learned that asthma is protective for pneumonia mortality because asthmatic patients receive more aggressive treatment—highlighting the critical importance of interpretability in healthcare ML.
+
+<br>
+
+## Books
+
+- **Burkov A. [The Hundred Page Machine Learning Book](http://themlbook.com/). Quebec City, Canada: Self-published; 2019.**
+
+  Concise, accessible introduction to core ML concepts. Despite its brevity, this book covers supervised learning, neural networks, and common ML algorithms with remarkable clarity. Perfect for getting up to speed quickly without getting bogged down in mathematical details.
+
+- **Burkov A. [Machine Learning Engineering](http://www.mlebook.com/). Quebec City, Canada: True Positive Inc.; 2020.**
+
+  Practical guide to productionizing ML systems. Goes beyond model training to cover data pipelines, model deployment, monitoring, and maintenance. Essential reading for anyone who needs to put ML models into production.
+
+- **Kuhn M, Johnson K. [Applied Predictive Modeling](https://link.springer.com/book/10.1007/978-1-4614-6849-3). New York, NY: Springer; 2013.**
+
+  Comprehensive practical guide to predictive modeling techniques. Covers the entire modeling workflow from preprocessing through model evaluation with extensive R code examples. The emphasis on practical considerations makes this invaluable for applied work.
+
+- **Mitchell M. [Artificial Intelligence: A Guide for Thinking Humans](https://melaniemitchell.me/aibook/). New York, NY: Farrar, Straus and Giroux; 2019.**
+
+  Essential reading on AI from a thoughtful, critical perspective. Mitchell, a leading AI researcher, provides a balanced view of what AI can and cannot do, addressing both the promise and limitations of current approaches. Accessible to general readers while maintaining technical rigor.
+
+- **Broussard M. [Artificial Unintelligence: How Computers Misunderstand the World](https://mitpress.mit.edu/9780262537018/artificial-unintelligence/). Cambridge, MA: MIT Press; 2018.**
+
+  Important critique of how algorithms fail to understand context and nuance. Broussard, a data journalist, examines cases where technological solutions have failed and argues persuasively that many problems require human judgment rather than algorithmic solutions.
+
+- **Wasserman L. [All of Nonparametric Statistics](https://link.springer.com/book/10.1007/0-387-30623-4). New York, NY: Springer; 2006.**
+
+  Comprehensive theoretical foundation for nonparametric methods. Covers density estimation, regression, inference, and testing with mathematical rigor. Essential for understanding the statistical theory underlying many modern ML methods.
+
+- **Shalev-Shwartz S, Ben-David S. [Understanding Machine Learning: From Theory to Algorithms](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/). New York, NY: Cambridge University Press; 2014.**
+
+  Rigorous theoretical treatment of ML fundamentals. Covers computational learning theory, overfitting, regularization, and model selection with formal proofs. The free PDF version makes this accessible to anyone wanting to understand ML theory deeply.
+
+- **Efron B, Hastie T. [Computer Age Statistical Inference: Algorithms, Evidence, and Data Science](https://web.stanford.edu/~hastie/CASI/). New York, NY: Cambridge University Press; 2016.**
+
+  Modern perspective connecting classical and contemporary statistical methods. Traces the evolution from early 20th century statistics through bootstrap methods to modern ML. Provides historical context that helps understand why certain methods work.
+
+- **Hastie T, Tibshirani R, Friedman J. [Elements of Statistical Learning: Data Mining, Inference, and Prediction](https://hastie.su.domains/ElemStatLearn/). 2nd ed. New York, NY: Springer; 2009.**
+
+  Classic comprehensive reference on statistical learning methods. The definitive technical resource covering supervised learning, model selection, inference, and unsupervised learning. Dense but invaluable for serious practitioners.
+
+- **James G, Witten D, Hastie T, Tibshirani R. [An Introduction to Statistical Learning: with Applications in R](https://www.statlearning.com/). 2nd ed. New York, NY: Springer; 2021.**
+
+  Accessible introduction to statistical learning with R examples. More approachable than Elements of Statistical Learning while covering similar material. Excellent for self-study with exercises and datasets provided online.
+
+<br>
