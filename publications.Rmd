@@ -4,6 +4,10 @@ title: "Select Publications"
 
 <br>
 
+<div style="background-color: #f0f0f0; padding: 15px; margin-bottom: 20px; border-left: 4px solid #0066cc;">
+**[Jump to AJE Classroom Articles](#aje-classroom)**
+</div>
+
 **Naimi AI**, Benkeser D, Rudolph JE. Computing True Parameter Values in Simulation Studies Using Monte Carlo Integration. *Epidemiology*. Accepted March 11 2025. [PDF](files/publications/Naimi_et_al_2025_Epidemiology.pdf)
 
 Zheng Z, Kennedy EH, Bodnar LM, **Naimi AI**. Efficient Generalization and Transportation. *Statistical Science*. Accepted for Publication, Dec 29 2024. [PDF](files/publications/Zheng_et_al_2025_Statistical_Science.pdf)
@@ -85,7 +89,7 @@ Herring AH, **Naimi AI**. Invited Commentary: The Ecological Design. *British Jo
 
 <br>
 
-## AJE Classroom Articles
+## AJE Classroom Articles {#aje-classroom}
 
 **Naimi AI**, Whitcomb BW. Inferential Statistics and Direct versus Inverse Problems. Accepted for Publication March 13 2025. [PDF](files/publications/classroom/Naimi_and_Whitcomb_2025_AJE.pdf)
 
