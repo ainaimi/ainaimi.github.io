@@ -1,0 +1,25 @@
+name: "Ashley I. Naimi"
+output_dir: "."
+navbar:
+  title: "Home"
+  left:
+    - text: "Publications"
+      href: ../publications.html
+    - text: "Resources"
+      href: ../access.html
+
+  right:
+    - icon: fa-envelope fa-2x
+      href: "mailto:ashley.naimi@emory.edu"
+    - icon: fab fa-github fa-2x
+      href: http://github.com/ainaimi
+    - icon: fab fa-twitter fa-2x
+      href: https://twitter.com/ashley_naimi
+    - icon: ai ai-google-scholar-square ai-2x
+      href: https://scholar.google.com/citations?user=hA7DPuMAAAAJ&hl=en
+output:
+  html_document:
+    theme: simplex
+    css:
+     - https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css
+     - '../custom.css'
