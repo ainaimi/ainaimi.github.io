@@ -5,9 +5,9 @@
 
 <img src="figures/naimi_headshot.png" style="width:25%; border:1px solid; margin-right: 20px" align="left">
 
-Welcome! I am Professor in the Department of Epidemiology at the [Rollins School of Public Health](https://www.sph.emory.edu/), Emory University.
+ I'm a Professor in the Department of Epidemiology at the [Rollins School of Public Health](https://www.sph.emory.edu/), Emory University.
 
-My work focuses on developing and applying advanced quantitative methods to answer questions about analytic methodologies, data science, and public health. I enjoy teaching the next generation and collaborating with researchers across disciplines to advance our understanding of science, health, and disease.
+My work focuses on developing, evaluating, and applying advanced quantitative methods.
 
 <br>
 <br>
@@ -16,27 +16,23 @@ My work focuses on developing and applying advanced quantitative methods to answ
 
 ## Research
 
-My research integrates cutting-edge methods in **causal inference**, **machine learning**, and **artificial intelligence** to address complex questions in epidemiology. I am particularly interested in applying these methods to understand:
+My research integrates causal inference, machine learning, and artificial intelligence with clinical medicine and epidemiology to address questions about health and well-being. Through collaboration with researchers across the country, I work on projects ranging from pregnancy outcomes to chronic disease prevention. My methodological work focuses on addressing real-world challenges in study design, measurement error, effect transportability, and causal inference from observational data.
 
-- Reproductive and perinatal health outcomes
-- Nutritional epidemiology and dietary patterns
-- Social determinants of health and health equity
-- Methods for analyzing complex observational and randomized trial data
+I am increasingly interested in questions about science, data science, and statistics, epistemology and the philosophy of science, as well as education and training of the next generation.
 
-Through collaboration with researchers across the country, I work on projects ranging from pregnancy outcomes to chronic disease prevention. My methodological work focuses on addressing real-world challenges in study design, measurement error, effect transportability, and causal inference from observational data.
-
-[View my publications →](publications.html)
+[View some of my publications →](publications.html)
 
 <br>
 
 ## Consulting
 
-I provide statistical and methodological consulting for academic researchers, government agencies, and other organizations. My expertise includes:
+I provide statistical and methodological consulting for academic researchers, government agencies, companies, and other organizations. My expertise includes:
 
 - Study design and causal inference
 - Machine learning applications in health research
 - Analysis of complex longitudinal and observational data
 - Grant proposal development
+- Other
 
 If you're interested in consulting services, feel free to [reach out via email](mailto:ashley.naimi@emory.edu).
 
@@ -44,7 +40,7 @@ If you're interested in consulting services, feel free to [reach out via email](
 
 ## Teaching
 
-I teach courses in epidemiologic methods, data science, causal inference, and quantitative research at both the undergraduate and graduate levels. I am committed to making complex statistical concepts accessible and helping students develop practical skills they can apply in their research.
+I teach courses in quantitative methods, data science, causal inference, and quantitative research at both the undergraduate and graduate levels. I am committed to making complex statistical concepts accessible and helping students develop practical skills they can apply in their research.
 
 [Learn more about my teaching →](teaching.html)
 
