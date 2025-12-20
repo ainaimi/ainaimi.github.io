@@ -6,7 +6,7 @@ navbar:
     - text: "Publications"
       href: publications.html
     - text: "Resources"
-      href: resources/index.html 
+      href: access.html 
       
   right:
     - icon: fa-envelope fa-2x
