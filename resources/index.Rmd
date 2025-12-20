@@ -10,7 +10,7 @@ Here you will find resources and reading lists:
 
 [Accessing and Using Rollins HPC](computing.html)
 
-[Computer Setup Guide](ComputerSetup.html)
+<!-- [Computer Setup Guide](ComputerSetup.html) -->
 
 ## Reading Lists
 
@@ -18,9 +18,9 @@ Here you will find resources and reading lists:
 
 [Machine Learning](reading_list_ML.html)
 
-[Intention-to-Treat and Beyond](reading_list_ITB.html)
+<!-- [Intention-to-Treat and Beyond](reading_list_ITB.html) -->
 
 [Monte Carlo Simulation](reading_list_MCSim.html)
 
-[Fairness in Machine Learning](reading_list_fairness.html)
+<!-- [Fairness in Machine Learning](reading_list_fairness.html) -->
 
