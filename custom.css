@@ -41,6 +41,14 @@ div, span, td, th, li {
     font-size: 18px !important;
 }
 
+/* Remove arrows from navigation */
+.navbar ul li:before,
+.navbar-nav li:before,
+.nav li:before {
+    content: none !important;
+    display: none !important;
+}
+
 /* Change colors from red to blue */
 a {
     color: #2563eb;
