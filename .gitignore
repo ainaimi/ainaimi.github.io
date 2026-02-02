@@ -3,9 +3,5 @@
 .RData
 .Ruserdata
 
-# Generated site libraries
-site_libs/
-resources/site_libs/
-
 # System files
 .DS_Store
