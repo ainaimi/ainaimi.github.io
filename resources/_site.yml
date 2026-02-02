@@ -2,6 +2,7 @@ name: "Ashley I. Naimi"
 output_dir: "."
 navbar:
   title: "Home"
+  href: ../index.html
   left:
     - text: "Publications"
       href: ../publications.html
