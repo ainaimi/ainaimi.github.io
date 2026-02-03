@@ -29,7 +29,7 @@ If you're unfamiliar with the unix terminal, you may find that when you try to t
 Once you enter the password, this should connect you to the cluster. You will know that you have successfully connected when you see the welcome page on your command line interface:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss1.png")
+knitr::include_graphics("../figures/ss1.png")
 ```
 
 At this point, you will need to use some basic commands to interact with the Unix system. There are a lot of resources available on this topic. The best I've found (so far) is the free book by Sean Kross: 
@@ -42,7 +42,7 @@ The more familiar you are with Unix commands, the easier time you will have usin
 First we'll get a sense of where we are on the cluster. If you use the `ls` command, you will get a list of what's in your current directory:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss2.png")
+knitr::include_graphics("../figures/ss2.png")
 ```
 
 This tells me that I have two folders in my login (or home) directory R and test. 
@@ -50,7 +50,7 @@ This tells me that I have two folders in my login (or home) directory R and test
 We can also use the `pwd` command to figure out where we are in the tree structure of the cluster:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss3.png")
+knitr::include_graphics("../figures/ss3.png")
 ```
 
 \noindent which tells us that my folder (`anaimi`) is located in a home folder (`home`). We can move around from one directory to another and explore using the `cd` command and then the `ls` command. For example, to see what's in the `test` folder, I can use the `cd` command, which stands for "change directory":
@@ -62,7 +62,7 @@ cd test
 When we do this, and then `ls` the files in the directory we moved to, we get this:
 
 ```{r, out.width = "1000px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss4.png")
+knitr::include_graphics("../figures/ss4.png")
 ```
 
 \noindent This tells us that in our test folder (`~/anaimi/test`), there are six files. This folder contains the examples we will be using to get you familiar with the cluster in this group. The files containing "_pitt" in their name were similarly used for similar purposes when I taught at the University of Pittsburgh. 
@@ -70,7 +70,7 @@ knitr::include_graphics("./figures/ss4.png")
 Finally, for the sections that follow, it may be good to know that I typically open two command line interfaces: one that is working in the local directory that I have all of my relevant project files in, and the other that is working on the cluster. On my local computer, this is what my screen looks like:
 
 ```{r, out.width = "1000px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss5.png")
+knitr::include_graphics("../figures/ss5.png")
 ```
 
 #### Running a Job
@@ -122,13 +122,13 @@ scp test.R anaimi@clogin01.sph.emory.edu:~/test/
 The above code says to secure copy the `test.R` file to the `test` subfolder in the home directory `~/test` of the `anaimi@clogin01.sph.emory.edu` account. Once this code is run, you should be prompted to enter your password. After you enter your password, you will receive confirmation that the file was successfully copied:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss6.png")
+knitr::include_graphics("../figures/ss6.png")
 ```
  
 And we can now see this file on the command line as well:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss7.png")
+knitr::include_graphics("../figures/ss7.png")
 ```
 
 #### Step 3: Testing and running the job on the cluster
@@ -155,7 +155,7 @@ module load R
 Then, all you need to do is type `R` and press "enter". This should lead to the following display:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss8.png")
+knitr::include_graphics("../figures/ss8.png")
 ```
 
 You can now copy and paste your code (from your local computer) directly into the `R` console and run it as you would on your local computer (note that to do this, you don't actually need to scp the file to the cluster, but it's good to know how to use `scp`). This is one way to evaluate whether any problems will occur when running your job on the cluster. 
@@ -215,7 +215,7 @@ sbatch test_run.sh
 After you run this command on the cluster, you should get a confirmation similar to the following:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss9.png")
+knitr::include_graphics("../figures/ss9.png")
 ```
 
 In this case, the job ID is 3240 You can check on the status of all the jobs running on your account by typing: `squeue -u $(whoami)`, which should provide you information on the status of job 3240 (note that you will likely not see anything, because the job runs so fast!).
@@ -225,7 +225,7 @@ If you selected the `mail-type=ALL` option, you should also receive an email con
 Once the job finishes, you should see the output from the `test.R` file in the folder where the job was run:
 
 ```{r, out.width = "500px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss10.png")
+knitr::include_graphics("../figures/ss10.png")
 ```
 
 In the above figure, we see that we have the output from our `test.R` file, (`simulation_results_rollins.csv`), as well as a log file that capture any information relevant to our job. We have now completed the task of running our job.
@@ -242,7 +242,7 @@ scp anaimi@clogin01.sph.emory.edu:~/test/slurm-3240.out .
 Be sure to replace my user name with yours. Once you enter your password for both commands, you will receive notification of the status of the download:
 
 ```{r, out.width = "1000px",echo=F, fig.align="center"}
-knitr::include_graphics("./figures/ss11.png")
+knitr::include_graphics("../figures/ss11.png")
 ```
 
 You should now have the simulation results on your local computer. 
