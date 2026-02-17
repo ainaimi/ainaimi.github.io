@@ -5,8 +5,10 @@ navbar:
   left:
     - text: "Publications"
       href: publications.html
+    - text: "Presentations"
+      href: presentations.html
     - text: "Resources"
-      href: access.html 
+      href: access.html
       
   right:
     - icon: fa-envelope fa-2x
