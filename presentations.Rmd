@@ -4,4 +4,4 @@ title: "Presentations"
 
 <br>
 
-Applied Statistics Requires Scientific Context: Why Statistics Reform Needs Epidemiologic Thinking. Presented at UNC Chapel Hill, Feb 17 2026. [slides](files/publications/ScientificContext/ScientificContext_UNC2026.html)
+Applied Statistics Requires Scientific Context: Why Statistics Reform Needs Epidemiologic Thinking. Presented at UNC Chapel Hill, Feb 17 2026. [slides](files/presentations/ScientificContext/ScientificContext_UNC2026.html)
