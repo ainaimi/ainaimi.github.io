@@ -1,0 +1,687 @@
+/* Based on Alison's original at
+ https://rstudio-conf-2020.github.io/slide-templates/xaringan/
+ Dark theme variant
+*/
+
+.remark-slide-content p, ul, ol, li {
+  font-size: 1.4rem;
+}
+
+.remark-slide-content {
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+
+.remark-slide-content {
+  background-color: #1e1e1e;
+  color: #e8e8e8;
+}
+
+.remark-slide-content h1 {
+  font-weight: normal;
+  font-size: 45px;
+  margin-top: 0px;
+  color: #6ca3d9;
+}
+
+.remark-slide-content h2 {
+  color: #6ca3d9;
+}
+
+.remark-slide-content h3 {
+  color: #6ca3d9;
+}
+
+.remark-slide-content h4 {
+  color: #6ca3d9;
+}
+
+.remark-slide-content h5 {
+  color: #6ca3d9;
+}
+
+.remark-slide-content h6 {
+  color: #6ca3d9;
+}
+
+.footnote {
+	bottom: 1em;
+	font-size: 60%;
+	line-height: 1.2;
+}
+
+.footnote p {
+	margin: 0;
+}
+
+.speed-limit-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	z-index: 100;
+}
+
+.middle-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+
+img {
+	margin-bottom: 1.5rem;
+	overflow: hidden;
+	/*background: #2d2d2d;*/
+	/*box-shadow: 0 2px 4px 0 rgba(255,255,255,.2);  MK Edit */
+}
+
+.code10 .remark-code {
+  font-size: 10%;
+}
+
+.code20 .remark-code {
+  font-size: 20%;
+}
+
+.code30 .remark-code {
+  font-size: 30%;
+}
+
+.code40 .remark-code {
+  font-size: 40%;
+}
+
+.code50 .remark-code {
+  font-size: 50%;
+}
+
+.code60 .remark-code {
+  font-size: 60%;
+}
+
+.code70 .remark-code {
+  font-size: 70%;
+}
+
+.code80 .remark-code {
+  font-size: 80%;
+}
+
+.code90 .remark-code {
+  font-size: 90%;
+}
+
+.code95 .remark-code {
+  font-size: 95%;
+}
+
+.code100 .remark-code {
+  font-size: 100%;
+}
+
+.font10 p {
+  font-size: 10%;
+}
+
+.font20 p {
+  font-size: 20%;
+}
+
+.font30 p {
+  font-size: 30%;
+}
+
+.font40 p {
+  font-size: 40%;
+}
+
+.font50 p {
+  font-size: 50%;
+}
+
+.font60 p {
+  font-size: 60%;
+}
+
+.font70 p {
+  font-size: 70%;
+}
+
+.font80 p {
+  font-size: 80%;
+}
+
+.font90 p {
+  font-size: 90%;
+}
+
+.font100 p {
+  font-size: 100%;
+}
+
+.font110 p {
+  font-size: 110%;
+}
+
+.font120 p {
+  font-size: 120%;
+}
+
+.font130 p {
+  font-size: 130%;
+}
+
+.font140 p {
+  font-size: 140%;
+}
+
+.font150 p {
+  font-size: 150%;
+}
+
+.font160 p {
+  font-size: 160%;
+}
+.font170 p {
+  font-size: 170%;
+}
+.font180 p {
+  font-size: 180%;
+}
+.font190 p {
+  font-size: 190%;
+}
+.font200 p {
+  font-size: 200%;
+}
+.font400 p {
+  font-size: 400%;
+}
+
+
+/* code */
+
+pre {
+  border: 1px solid #404040;
+  box-shadow: 0px 0px 2px #000;
+  background-color: #2d2d2d;
+  overflow-x: auto;
+  border-radius: 0px; /*undo rounded corners*/
+  font-size: 65%;
+}
+
+pre code {
+  background: none;
+  font-size: 0.8rem;
+  font-family: monospace;
+  color: #a8c5d8;
+}
+
+
+.hljs {
+	background: #2d2d2d !important;
+	color: #a8c5d8;
+}
+
+/* lighten up code and results for dark theme */
+.hljs-solarized-light .hljs {
+  color: #a8c5d8;
+}
+
+.hljs-solarized-light .hljs-comment,
+.hljs-solarized-light .hljs-quote {
+	color: #8a9a9a;
+}
+
+
+.display {
+  font-weight: 700;
+  color: #ff8c73;
+}
+
+.title {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+}
+
+/* link color */
+a, a > code {
+  color: #4da3ff;
+}
+
+
+:any-link {
+    color: #4da3ff;
+    text-decoration: underline;
+}
+
+
+/* mouse over link */
+a:hover, a:active, a:focus {
+    color: #70b3ff;
+    text-decoration: underline;
+}
+
+.remark-code {
+  color: #ff8c73;
+  font-size: 1.25em;
+}
+
+.remark-inline-code {
+  color: #ff8c73;
+  font-size: .9em;
+
+}
+
+.remark-code-line-highlighted {
+  background-color: #3d5a7a80;
+}
+
+.inverse {
+  background-color: #e8e8e8;
+  color: #1e1e1e;
+  text-shadow: none;
+}
+
+.inverse .remark-inline-code {
+  color: #E7553C;
+}
+
+.inverse a {
+  color: #0066cc;
+}
+
+.inverse a:hover {
+  color: #0052a3;
+}
+
+
+/* Two-column layout */
+.left-column {
+  color: #999;
+  width: 25%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #e8e8e8;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+blockquote {
+  border-left: solid 5px #555;
+  padding-left: 1em;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+}
+table thead th { border-bottom: 1px solid #404040; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #2a2a2a }
+
+@page { margin: 0; }
+
+.title-slide {
+ background-image: url(../../images/emory_logo_white.png);
+	background-position: 95% 95%;
+	background-size: 20%;
+	background-color: #1e1e1e;
+	border-bottom: 0px solid  #522D80;
+	box-shadow:  0 55px 0 #1e1e1e;
+}
+
+.title-slide h1 {
+  font-family: 'Source Sans Pro', serif;
+  color: #e8e8e8;
+  text-shadow: none;
+}
+
+.title-slide h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 1.6em;
+  color: #e8e8e8;
+  text-shadow: none;
+  padding-top: .1em;
+  margin-top: 0px;
+  margin-bottom: .1em;
+}
+
+.title-slide h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: #e8e8e8;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.6em;
+}
+
+.title-slide h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #e8e8e8;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title-slide a {
+  color: #4da3ff;
+}
+
+/* QR code positioning on title slide */
+.qr-code {
+  position: absolute;
+  top: 60%;
+  right: 3%;
+  width: 120px;
+  height: 120px;
+  z-index: 10;
+}
+
+/* Wider cols */
+
+.right-wide {
+  width: 60%;
+  float: right;
+  padding-top: 1em;
+}
+
+.left-narrow {
+  width: 40%;
+  float: left;
+  padding-top: 1em;
+}
+
+.left-wide {
+  width: 60%;
+  float: left;
+  padding-top: 1em;
+}
+
+.right-narrow {
+  width: 40%;
+  float: right;
+  padding-top: 1em;
+}
+
+/* footer */
+
+div.my-footer {
+    background-color: #0a0a0a;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+
+div.my-footer span {
+    font-size: 10pt;
+    color: #e8e8e8;
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+}
+
+/* max's additions */
+
+
+.title-hex{
+  height: 50px;
+  align: middle;
+  float: right;
+}
+
+.pull-left-a-lot {
+  float: left;
+  width: 60%;
+}
+.pull-right-a-little {
+  float: right;
+  width: 37%;
+}
+
+.pull-left-a-little {
+    float: left;
+    width: 37%;
+}
+.pull-right-a-lot {
+  float: right;
+  width: 60%;
+}
+
+/* davis additions */
+
+.remark-slide-number {
+  font-size: 13pt;
+  font-family: 'Source Sans Pro';
+  color: #e8e8e8;
+  opacity: 1;
+}
+.inverse .remark-slide-number {
+  font-size: 13pt;
+  font-family: 'Source Sans Pro';
+  color: #1e1e1e;
+  opacity: 1;
+}
+
+/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+/* Overlay bullets on top of background image with grayed background */
+.overlay-bullets {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(30, 30, 30, 0.92);
+  padding: 50px 80px;
+  border-radius: 10px;
+  z-index: 100;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-bullets ul {
+  margin: 0;
+  padding-left: 30px;
+}
+
+.overlay-bullets li {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Position text at bottom */
+.bottom-text {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  right: 40px;
+  font-size: 1.1rem;
+  background-color: rgba(30, 30, 30, 0.85);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.dark-bg-overlay {
+ background-color: rgba(0, 0, 0, 0.6);
+ background-blend-mode: darken;
+}
+
+/* Gray out background image when overlay appears */
+.remark-visible .remark-slide-container:has(.overlay-bullets) {
+  filter: brightness(0.5);
+}
+
+.invert-bg {
+ filter: invert(1);
+}
+
+/* Keyframe for fading in random images */
+@keyframes fadeInImg {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Random positioned images that appear sequentially */
+[class*="random-img-"] {
+  opacity: 0;
+  animation: fadeInImg 1.5s ease-out forwards;
+}
+
+.random-img-1 {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 200px;
+  z-index: 50;
+  animation-delay: 0s;
+}
+
+.random-img-2 {
+  position: absolute;
+  bottom: 20%;
+  left: 8%;
+  width: 180px;
+  z-index: 50;
+  animation-delay: 1s;
+}
+
+.random-img-3 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 190px;
+  z-index: 50;
+  animation-delay: 2s;
+}
+
+.random-img-4 {
+  position: absolute;
+  bottom: 15%;
+  right: 12%;
+  width: 210px;
+  z-index: 50;
+  animation-delay: 3s;
+}
+
+.random-img-5 {
+  position: absolute;
+  bottom: 20%;
+  right: 18%;
+  width: 210px;
+  z-index: 50;
+  animation-delay: 4s;
+}
+
+.random-img-6 {
+  position: absolute;
+  bottom: 35%;
+  right: 5%;
+  width: 210px;
+  z-index: 50;
+  animation-delay: 5s;
+}
+
+.random-img-7 {
+  position: absolute;
+  bottom: 5%;
+  right: 55%;
+  width: 210px;
+  z-index: 50;
+  animation-delay: 6s;
+}
+
+.random-img-8 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 200px;
+  z-index: 50;
+  animation-delay: 7s;
+}
+
+.random-img-9 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 190px;
+  z-index: 50;
+  animation-delay: 8s;
+}
+
+.random-img-10 {
+  position: absolute;
+  bottom: 35%;
+  left: 30%;
+  width: 210px;
+  z-index: 50;
+  animation-delay: 9s;
+}
+
+.random-img-11 {
+  position: absolute;
+  top: 40%;
+  right: 35%;
+  width: 200px;
+  z-index: 50;
+  animation-delay: 10s;
+}
+
+.random-img-12 {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  width: 190px;
+  z-index: 50;
+  animation-delay: 11s;
+}
+
+.random-img-13 {
+  position: absolute;
+  top: 30%;
+  right: 2%;
+  width: 200px;
+  z-index: 50;
+  animation-delay: 12s;
+}
+
+.random-img-14 {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  width: 210px;
+  z-index: 50;
+  animation-delay: 13s;
+}
