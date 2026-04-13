@@ -9,3 +9,5 @@ Some recent presentations, with slides linked. Feel free to send feedback or rep
 How to Read (Like an Intellectual, Scientist, or Graduate Student). Presented at Emory University, Jan 30 2025 and UNC Chapel Hill, Feb 17 2026. [slides](files/presentations/HowToRead/HowToRead.html)
 
 Applied Statistics Requires Scientific Context: Why Statistics Reform Needs Epidemiologic Thinking. Presented at UNC Chapel Hill, Feb 17 2026. [slides](files/presentations/ScientificContext/ScientificContext_UNC2026.html)
+
+Applied Statistics Requires Scientific Context. The Department of Epidemiology Harland Austin Memorial Lecture / RSPH Luminaries Lecture Series. Emory University, March 14 2026. [slides](files/presentations/HarlandAustinLecture/ScientificContext_Emory2026.html)
