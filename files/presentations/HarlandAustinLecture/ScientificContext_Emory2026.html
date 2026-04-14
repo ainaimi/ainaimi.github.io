@@ -4,7 +4,7 @@
     <title>ScientificContext_Emory2026.knit</title>
     <meta charset="utf-8" />
     <meta name="author" content="" />
-    <meta name="date" content="2026-04-13" />
+    <meta name="date" content="2026-04-14" />
     <script src="libs/header-attrs-2.30/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -323,7 +323,7 @@ Up until very recently, this definition of the p value is what I would teach in 
 
 In this definition, we say that "the p value is the probability of observing a result as extreme or more extreme than the one we observed if the test hypothesis was true." I often make it a point to add and emphasize the additional consideration that the "underlying statistical model is correct" and that this so-called "underlying statistical model" is not referring to just the, e.g., logistic regression model we are using to conduct our analysis. 
 
-Inevitably, students ask my what else there is, and I present a hodge-podge list of items that depends on a lot of things but that can involve, possibly, the assumption of independent and identically distributed observations, no measurement error, no confounding, as well as many other items. 
+Inevitably, students ask me what else the "Model" might be referring too. When pressed, statisticians will often refer to a varying collection of items that can include, possibly, the assumption of independent and identically distributed observations, no measurement error, no confounding, as well as many other items. 
 
 Though correct, one reason why I think this definition of the p value is insufficient is that it is all too easy to either ignore the condition that our "the underlying statistical model is correct", or to simply mention it without actually understanding what this condition is. 
 
@@ -350,11 +350,14 @@ Though correct, one reason why I think this definition of the p value is insuffi
 &lt;/div&gt;
 
 ???
-Following prior work,\cite{Greenland2023a, Perezgonzalez2015} the P value can be defined as a quantile or percentile location measure of divergence, distance, or separation between the data we collected, let's call this `\(z\)`, and what we'd expect these data to look like if a set of conditions or assumptions were true. 
+
+So this brings us to a re-formulation, or re-definition of the P value introduce by Sander Greenland, building on some insights made in psychology.
+
+Following this work, we define the P value as a percentile location measure of divergence, distance, or separation between the data we collected, let's call this `\(z\)`, and what we'd expect these data to look like if a set of conditions or assumptions were true. 
 
 For convenience, let's call the set of conditions and assumptions `\(M\)`. 
 
-Let's say we're interested in estimating the intention to treat effect in a double blind placebo controlled trial, which we can define using potential outcomes. 
+By way of example or illustration, let's say we're interested in estimating the intention to treat effect in a double blind placebo controlled trial, which we can define using potential outcomes. 
 
 ***
 More technically, `\(M\)` is a model manifold that lies in the `\(n\)`-dimensional expectation space defined by the data generating mechanism that produced `\(z\)`. 
@@ -405,7 +408,7 @@ To obtain a p value in this setting, we add to our set of assumptions the chosen
 
 This null value, when combined with the other conditions/assumptions in M, implies that the difference in estimated treatment specific means should be zero.
 
-Importantly, it's not just `\(M_0\)` that implies that our sample means should be equivalent. It is the entire set of assumptions in M that implies the difference in sample means will be zero.
+Importantly, it's not just null hypothesis in isolation that implies that our sample means should be equivalent. It is the entire set of assumptions in M that implies the difference in sample means should be zero.
 
 ---
 
@@ -680,7 +683,7 @@ Considering again the trial on tofacitinib, both patients and clinicians were bl
 
 However, tofacitinib is known to result in short-term dose-dependent changes in lipid concentrations, liver enzymes, creatine kinase, and blood counts. 
 
-Results of tests for these markers, as well as the side effect profile, could easily lead to **functional unblinding** patients in the trial. 
+Results of tests for these markers, as well as the side effect profile, could easily lead to **functional unblinding** patients in the trial. In fact, in an email conversation with the lead author of this trial, Atul Deohdar did confirm to me that they beleived unblinding was possible in the patients who received tofacitinib.
 
 Notably, because the primary outcome was a subjective measure of self reported improvement (ASAS20), it is possible that unblinded patients in the treatment group reported better outcomes due to an expectancy effect, where patients expect to be better, and thus report an improvement.
 
@@ -712,24 +715,49 @@ Indeed, if expectancy effects overwhelm the physiological effects of tofacitinib
 
 # Summary: The Reflexive Challenge of Scientific Context
 
+.middle-content[
+.font150[
+
+1) Context Determines Threshold Tolerance
+   
+2) Context Determines Validity
+
+]
+]
+    
+???
+
+So, let's now take a moment to summarize the key points of what we just covered.
+
+First, if we elect to use them, significance thresholds should be chosen on the basis of the study's context. It doesn't make sense for use to use the same error tolerance threshold for a study like EAGeR versus a study of the effects of tofacitinib.
+
+Second, and far more importantly, whether we elect to use p value thresholds or not, the key driving force behind any analysis is the set of assumptions that shapes whether we can interpret the results the way we'd like to, or the way we think we can. These assumptions are shaped entirely by foundational context.
+
+---
+# Summary: The Reflexive Challenge of Scientific Context
+
+.middle-content[
 .font150[
 
 - Part of the scientific task: what goes in `\(M\)` and do these elements hold?
    
-- This is not easy. 
+- This is not always easy. 
 
-- Knowing `\(M\)` requires knowing systems under study
+- Knowing `\(M\)` requires knowing systems under study.
+
+- Knowing systems under study requires knowing `\(M\)`.
 
 ]
     
 ???
 
-I believe that some of the issues I'm discussing here echo a tension recognized since at least as far back as Plato’s Socratic Dialogues, and captured in Meno’s “paradox of inquiry”.37(p230) 
+The implication here is that much of our attention, energy, and focus should be on identifying and understanding the elements of scientific context that matters for the study. 
+
+This is not always an easy task. Some of the issues I'm discussing here echo a tension recognized since at least as far back as Plato’s Socratic Dialogues, and captured in Meno’s “paradox of inquiry”.37(p230) 
 
 When using statistical methods, meaningful evaluation of assumptions requires prior knowledge of the system under study, yet that knowledge is precisely what scientific inquiry aims to produce.
 
-The scientist can thus be caught in a reflexive loop: the validity of their tools depends on knowledge they may still be in the process of acquiring. This can
-make it difficult to even identify what are the relevant elements of M, which can lead to potential threats to a study’s validity that are hiding in the messy aspects of study context.
+The scientist can thus be caught in a reflexive loop: the validity of their tools depends on knowledge they may still be in the process of acquiring. This can make it difficult to even identify what are the relevant elements of M, which can lead to potential threats to a study’s validity that are hiding in the messy aspects of study context.
 
 ---
 &lt;img src="images/Benjamin_image.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; filter: invert(1);"&gt;
@@ -741,14 +769,13 @@ make it difficult to even identify what are the relevant elements of M, which ca
 &lt;/div&gt;
 
 ???
-So, when cast in this, it's easy to see why calls like the one that Benjamin and the many co-authors of this 2018 call to lower significance thresholds are problematic.
+So, when cast in this light, I think it's easy to see why calls like the one that Benjamin and the many co-authors of this 2018 call to lower significance thresholds are problematic.
 
 Though in mathematical and decontextualized settings, there may be some compelling reasons to do so (Benjamin et al use Bayesian arguments to make their mathematically compelling case)
 
 In applied settings, context matters, a lot. 
 
-Arguing for universal significance thresholds would be tantamount to making a case for a single nation-wide speed limit consisting 
-of a weighted average of all speed limits across the country. It simply doesn't work in practice. 
+The best analogy I can think of is that arguing for universal significance thresholds would be tantamount to making a case for a single nation-wide speed limit for all roads across the country. It simply doesn't work in practice. 
 
 ---
 
@@ -763,15 +790,19 @@ of a weighted average of all speed limits across the country. It simply doesn't 
    - cognitive forcing tools
       - CONSORT, PRECIS, STROBE, TARGET
 
-- These should be taught more prominently MPH and PhD programs.
+- These could be taught more prominently MPH and PhD programs.
 
 ]
 
 ???
 
-Tools and methodologies are available to help us navigate and manage context: tools like compatibility intervals, surprisal or s-values, and an understanding of cognitive biases and heuristic tools can go a long way in helping us navigate complex settings. 
+So what can we do instead?
 
-And so they should take a more central role in our MPH and PhD curricula. However, for our teaching to be most effective, these tools should be presented alongside a deeper engagement with the scientific reasoning that gives them meaning.
+Tools and methodologies are available to help us navigate and manage context: tools like compatibility intervals, surprisal or s-values, and an understanding of cognitive biases and heuristic tools, as well as cognitive forcing tools, such as the  STROBE, TARGET, or CONSORT guidelines, can go a long way in helping us navigate complex settings. 
+
+And so they should take a more central role in our MPH and PhD curricula. 
+
+However, we need to recognize these tools for what they are: aids, tools, and assists. These tools should be presented alongside a deeper engagement with the mess of context that defines an area of science: things like substantive theory, or public health and clinical practice.
 
 ---
 
@@ -787,15 +818,17 @@ And so they should take a more central role in our MPH and PhD curricula. Howeve
 
 ???
 
-I believe that, at the core of what I presented for you today is a key takeaway: Quoting Ruma Falk and Charles Greenbaum, there can be no mechanical alternative to informed judgement. 
+More to the point, I believe that, at the core of what I presented for you today is a key takeaway: Quoting Ruma Falk and Charles Greenbaum, there can be no mechanical alternative to informed judgement. 
 
-No single threshold, no universal rule, no algorithm can substitute for understanding the scientific context of the problem you are studying.
+No single threshold, no universal rule, no algorithm or methodological tool can substitute for understanding the scientific context of the problem you are studying.
 
 This implies that we must become experts at identifying and unpacking the relevant contextual features of a scientific problem, and develop strategies to account for them. This includes understanding the treatment or exposure under study, its risk profile, the outcome being measured, the study design, and the potential threats to validity that arise from these details, and a whole host of other elements that can sometimes go unmentioned or are implicit in our application of scientific methods.
 
 In other words, we must do careful detective work that will sometimes go beyond the proscriptions of analytic and statistical methodology. 
 
-This is fundamentally what I believe epidemiology is about, the original medical detectives. This is an aspect of our field and it's history that should not be forgotten or be unappreciated.
+This is fundamentally what I believe epidemiology is about, the original medical detectives. This is an aspect of our field and it's history that should not go unappreciated.
+
+This, I believe, can go a long way in balancing the debate about statistics and evidence in medical research.
 
 ---
 
