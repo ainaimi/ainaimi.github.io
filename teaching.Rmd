@@ -1,0 +1,21 @@
+---
+title: "Teaching"
+---
+
+Courses I am currently teaching, with links to course websites and materials.
+
+<br>
+
+## Fall 2026
+
+**[EPID 785R — Applied Foundations of Study Design and Regression Modeling](https://ainaimi.github.io/epid750-site/)**
+
+*Department of Epidemiology, Emory University · Doctoral level · 4 credit hours*
+
+A doctoral course on the relationship between study design and regression modeling, from target trial emulation to flexible and survival regression.
+
+This course develops the applied foundations of study design and regression modeling for doctoral students in epidemiology. It begins with design principles through the target trial emulation framework, then treats regression as a single machine with three uses — description, prediction, and causal inference — covering GLMs, variance estimation, marginal versus conditional adjustment, flexible and penalized regression, regression for outcome-dependent sampling, and models for time-to-event outcomes.
+
+[Course website →](https://ainaimi.github.io/epid750-site/)
+
+<br>
