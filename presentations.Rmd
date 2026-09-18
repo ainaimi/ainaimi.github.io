@@ -17,3 +17,5 @@ CATE Estimation in Complex Longitudinal Data: An Introduction. Society for Causa
 Cargo Cult Causal Inference: Understanding Derivation and Proof is Part of the Whole (and the Whole $> \sum$ Parts). Society for Epidemiologic Research, Phoenix, Arizona June 25 2026. [slides](files/presentations/SER_2026_Proofs/SER_2026_Proofs.pdf)
 
 AI and LLMs in Epidemiology. Society for Epidemiologic Research, Phoenix, Arizona June 25 2026. [slides](files/presentations/SER_2026_AI/SER_2026_AI.pdf)
+
+Practical AI for Science: An Orientation. AI and Large Language Models Symposium, Rollins School of Public Health, Emory University, September 18 2026. [slides](files/presentations/RSPH_AI_2026/ai4sci.html)

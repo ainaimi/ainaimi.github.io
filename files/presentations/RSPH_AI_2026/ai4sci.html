@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Practical AI for Science: An Orientation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="date" content="2026-09-18" />
+    <script src="libs/header-attrs-2.31/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/aml-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/aml-theme-dark.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: title-slide, left, bottom
+
+&lt;span style="font-size: 50px;"&gt; Practical AI for Science: An Orientation &lt;/span&gt; &lt;br&gt;
+
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;table style="border: none; border-collapse: collapse; margin-left: 0; margin-top: -50px; float: left;"&gt;
+&lt;tr style="border: none; background: transparent; line-height: 0.8;"&gt;
+&lt;td style="border: none; border-right: 1px solid #6ca3d9; padding: 2px 5px; background: transparent;"&gt;&lt;strong&gt;Ashley I Naimi, PhD&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="border: none; padding: 2px 5px; background: transparent;"&gt;Dept of Epidemiology&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="border: none; background: transparent; line-height: 0.8;"&gt;
+&lt;td style="border: none; border-right: 1px solid #6ca3d9; padding: 2px 5px; background: transparent;"&gt;Professor&lt;/td&gt;
+&lt;td style="border: none; padding: 2px 5px; background: transparent;"&gt;Emory University&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;div style="line-height: 1.2;"&gt;
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg> &amp;nbsp; &lt;a href="mailto:ashley.naimi@emory.edu"&gt;ashley.naimi@emory.edu&lt;/a&gt; &lt;br&gt;
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/></svg> &amp;nbsp; &lt;a href="https://ainaimi.github.io/"&gt;https://ainaimi.github.io/&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;img src="images/qr_code.svg" class="qr-code" alt="QR Code"&gt;
+
+
+
+---
+
+name: outline
+
+# Outline
+
+&lt;br&gt;
+
+.font160[
+
+* "Why?" and "What?"
+* Three ways to engage with AI
+* Delegation and stakes ladders
+* An example protocol
+* Some final considerations
+* The dangers of deskilling
+
+]
+
+---
+
+# Preamble
+
+&lt;br&gt;
+
+.font160[
+
+This talk is about how to use AI in/for research. Not ethical, legal, social, environmental, and other issues.
+
+- bias, consent, accountability for harm
+- copyright and training data, liability, regulation
+- labor markets, misinformation, concentration of power
+- electricity, water, hardware
+- who gets access; who bears the costs
+- dependence, attachment, mental health
+
+]
+
+---
+name: why-evidence
+class: section-one
+
+# Why this talk?
+
+&lt;table class="s1-evidence s1-agent-use" aria-label="Regular use of command-line AI coding assistants in selected disciplines, from a nonrepresentative survey in February and March 2026"&gt;
+  &lt;colgroup&gt;&lt;col style="width: 55%;"&gt;&lt;col style="width: 45%;"&gt;&lt;/colgroup&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;     &lt;/th&gt;&lt;th scope="col"&gt;Regular coding-agent use&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Economics&lt;/td&gt;&lt;td&gt;39%&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Political science&lt;/td&gt;&lt;td&gt;25%&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Public health&lt;/td&gt;&lt;td&gt;6%&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Communication&lt;/td&gt;&lt;td&gt;6%&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Education&lt;/td&gt;&lt;td&gt;4%&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="s1-source"&gt;Command-line assistants used more than once a week; nonrepresentative sample, Feb–Mar 2026.&lt;br&gt;
+Adapted from &lt;a href="https://www.anthropic.com/research/coding-agents-social-sciences"&gt;Lyttelton, Massenkoff &amp;amp; Wilmers, 2026, Fig. 1&lt;/a&gt;.&lt;/div&gt;
+
+???
+
+And before we get into the main topics we'll discuss today, it would help us orient if we understood a little bit about why I put this talk together. Clearly, AI has been at the forefront of the scientific and social discourse over the past several years, and in academia many are adopting it as a tool for research, teaching, and productivity. 
+
+However, in public health, the number of people engaging with AI is considerably lower than other fields, like economics. This is probably due to a number of reasons, including how the nature of the work we do differs from other fields
+
+
+CLICK
+
+
+
+---
+
+name: why-local
+class: section-one
+
+# Why this talk?
+
+&lt;p class="s1-kicker"&gt;What I heard at the RSPH faculty meeting:&lt;/p&gt;
+
+&lt;div class="s1-barrier"&gt;
+  &lt;span class="s1-label"&gt;A key barrier raised in the discussion:&lt;/span&gt;
+  &lt;p&gt;Understanding what AI is and how it works.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+
+&lt;p class="s1-kicker"&gt;"I use AI to ... "&lt;/p&gt;
+
+&lt;div class="s1-tasks" role="group" aria-label="Mentioned Uses at RSPH"&gt;
+  &lt;div class="s1-task"&gt;Ask questions/search&lt;/div&gt;
+  &lt;div class="s1-task"&gt;Edit text&lt;/div&gt;
+  &lt;div class="s1-task"&gt;Reformat material&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class="s1-interface"&gt;Mostly via standard web-chat interface.&lt;/p&gt;
+
+???
+
+But one reason seems to be an overall lack of understanding of what AI is, how we can apply it to specific problems relevant to us as epidemiologists, biostatisticians, and behavioral, environmental, global health, or health policy and management scientists. 
+
+At the full RSPH Faculty Meeting AI discussion, many of the faculty noted that they had used AI as a generic search engine to answer questions and find literature; as a tool to help refine and edit written text, and to reformat material, for example, when we have to change a manuscript to meet journal requirements. 
+
+However, many were unaware of the many different ways in which we can engage with AI, and few were able to share strategies to incorporate AI prudently into their workflows.
+
+My hope is that this talk helps alleviate these knowledge and practice gaps, provide a sharper framework for understanding what AI is and how to use it, how to be careful using it, and inspire you to develop your own frameworks in a way that's most useful to you, should you choose to incorporate AI into your workflow.
+
+---
+name: what-is-generative-ai
+class: section-one, token-orientation
+
+# What are we talking about?
+
+.font140[
+
+Generative AI
+
+* A **large language model (LLM)** is a model fit to an enormous corpus of text (public web, books, code): it returns a prediction of the next "word-piece" (**token**). Conceptually:
+
+]
+
+`$$\text{ChatGPT, Claude, Gemini, Copilot} \;\approx\; \hat{p}\left[\text{next token} \,\middle|\, \text{context, constraints}\right]$$`
+
+???
+
+To that end, it would benefit us to spend some time focusing on the high level concepts related to AI. Importantly, these concepts are not exact in the sense that they are mathematically correct. Hopefully they are useful at a conceptual level. To start, we can clarify what it is we are talking about when we say "AI". By far, the most common models that serve as the engines running an AI algorithm are large language models. A large language model is a model fit to an enormous amount of text data, such as public websites, books, code, and other repositories. These models return a prediction of the next "word-piece" or "token". 
+
+Conceptually speaking, you can think of the text that comes out of the large language models underneath frontier AI company tools such as chatGPT, claude, gemini, and copilot as a token prediction, conditional on context and constraints. 
+
+CLICK
+
+--
+
+&lt;div class="next-token-example" role="group" aria-label="Wolfram's GPT-2 example: the text so far and its five most probable continuations"&gt;
+  &lt;p class="next-token-prefix"&gt;The best thing about AI is its ability to&lt;/p&gt;
+  &lt;table class="next-token-table" aria-label="Reported continuation probabilities for the example text"&gt;
+    &lt;colgroup&gt;&lt;col style="width: 60%;"&gt;&lt;col style="width: 40%;"&gt;&lt;/colgroup&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Continuation&lt;/th&gt;&lt;th scope="col"&gt;Probability&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;learn&lt;/td&gt;&lt;td&gt;4.5%&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;predict&lt;/td&gt;&lt;td&gt;3.5%&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;make&lt;/td&gt;&lt;td&gt;3.2%&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;understand&lt;/td&gt;&lt;td&gt;3.1%&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;do&lt;/td&gt;&lt;td&gt;2.9%&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;GPT-2 example; only the top five continuations shown. Adapted from &lt;a href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"&gt;Wolfram, 2023&lt;/a&gt;.&lt;/div&gt;
+
+???
+
+So, for example, we might have a sequence of words such as "The best thing about AI is its ability to ..." as the context in the model, and an LLM would use this to generate predicted probabilities of the next "word piece". It would then select the word piece with the highest probability, in this case, "learn". 
+
+---
+name: what-are-we-talking-about
+class: section-one, agency-orientation
+
+# What are we talking about?
+
+&lt;p class="s1-kicker"&gt;The problem: "LLMs kind of suck." (Hadley Wickham)&lt;/p&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;table class="s1-evidence s1-bare-model" aria-label="Tasks a bare large language model handles unreliably, each paired with the one-line R command that performs it exactly"&gt;
+  &lt;colgroup&gt;&lt;col style="width: 45%;"&gt;&lt;col style="width: 55%;"&gt;&lt;/colgroup&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Ask a bare LLM to…&lt;/th&gt;&lt;th scope="col"&gt;…or run one line of R&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Count the n's in "unconventional"
+        &lt;span class="s1-detail"&gt;100 runs: answers 1 (×14), 2 (×76), 3 (×10), not 4.&lt;/span&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;str_count("unconventional", "n")  # 4&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Multiply two large numbers
+      &lt;span class="s1-detail"&gt;20598162 x 83106206 = something reasonable, but wrong.&lt;/span&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;20598162 * 83106206 # exact&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;"Delete the CSV files in my directory"
+        &lt;span class="s1-detail"&gt;"LLMs can't do anything… They're stuck in a box."&lt;/span&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;file.remove(list.files(pattern = ".csv"))&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="s1-source"&gt;&lt;a href="https://tidydesign.substack.com/p/a-no-bullshit-guide-to-llms"&gt;Wickham, "A no-bullshit guide to LLMs," Tidy Design, Sep 5, 2026&lt;/a&gt; (from a useR! 2025 keynote).&lt;/div&gt;
+
+???
+
+The problem is that LLMs, to use a turn of phrase from Hadley Wickham, kind of suck. 
+
+If you ask a bare LLM to count the number of letters in a word, such as the number of "n"'s in "unconventional" they will often get it wrong. 
+
+If you ask a bare LLM to multiply two large numbers, they might give you something that looks very reasonable, but can often be wrong.
+
+You might ask an LLM to delete files in a folder on your computer, but they can't do that because they're "stuck in a box" so to speak. 
+
+In contrast, each of these tasks can be easily and reliably accomplished by any number of programs. For instance, we can do each of these easily with a single short line of code in R or Python. 
+
+CLICK
+
+--
+
+&lt;p class="s1-takeaway"&gt;LLMs, alone, can't really do these well. But they can delegate: the model calls ordinary programs and reads their results back → agentic AI.&lt;/p&gt;
+
+???
+
+So LLM's alone may not reliably do these things very well. But LLMs can delegate. That is, the LLM can be used to write code that calls ordinary programs on your computer behind the scenes to do these things for you. 
+
+For instance, if you open up Claude on the web and ask it to multiply 20,598,162 * 83,106,206, it will very likely use a background program such as python to compute this number for you, and not try to generate it by predicting tokens from the LLM.
+
+This ability to delegate tasks to software that is "outside of the model" so to speak, is an important part of Agentic AI.
+
+---
+class: section-one, agency-orientation
+
+# What are we talking about?
+
+&lt;div class="agency-comparison agency-single"&gt;
+  &lt;div class="agency-mode"&gt;
+    &lt;h2&gt;Agentic use&lt;/h2&gt;
+    &lt;p class="agency-example"&gt;“Recreate this figure in the project.”&lt;/p&gt;
+    &lt;svg class="agency-flow" viewBox="0 0 535 140" role="img" aria-labelledby="agent-flow-title agent-flow-desc"&gt;
+      &lt;title id="agent-flow-title"&gt;Model-directed tool-use loop&lt;/title&gt;
+      &lt;desc id="agent-flow-desc"&gt;The human supplies a goal. The AI selects a step, a tool acts, and the result returns to the AI to inform its next step. Human-set limits and review points bound this loop.&lt;/desc&gt;
+      &lt;rect class="agency-node agency-human" x="1" y="32" width="111" height="62" rx="3"/&gt;
+      &lt;rect class="agency-node" x="163" y="32" width="185" height="62" rx="3"/&gt;
+      &lt;rect class="agency-node" x="399" y="32" width="135" height="62" rx="3"/&gt;
+      &lt;path class="agency-arrow" d="M 120 63 H 146"/&gt;
+      &lt;polygon class="agency-arrowhead" points="144.5,57.75 155,63 144.5,68.25"/&gt;
+      &lt;path class="agency-arrow" d="M 356 63 H 382"/&gt;
+      &lt;polygon class="agency-arrowhead" points="380.5,57.75 391,63 380.5,68.25"/&gt;
+      &lt;path class="agency-arrow" d="M 466 100 V 128 H 255 V 109"/&gt;
+      &lt;polygon class="agency-arrowhead" points="249.75,110.5 255,100 260.25,110.5"/&gt;
+      &lt;text x="56" y="70"&gt;Goal&lt;/text&gt;
+      &lt;text x="255" y="70"&gt;AI selects step&lt;/text&gt;
+      &lt;text x="466" y="70"&gt;Tool acts&lt;/text&gt;
+      &lt;text class="agency-result" x="358" y="119"&gt;Result&lt;/text&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;
+
+&lt;p class="agency-distinction"&gt;Agentic versus "non-Agentic": modes of use, not types of interface. &lt;br&gt;&lt;br&gt; Agentic AI = Delegation by LLM + Autonomy.&lt;/p&gt;
+
+&lt;div class="s1-source"&gt;Working distinction: &lt;a href="https://www.anthropic.com/engineering/building-effective-agents"&gt;Anthropic, &lt;em&gt;Building effective agents&lt;/em&gt;, 2024&lt;/a&gt;. Schematics show simplified examples.&lt;/div&gt;
+
+???
+
+By "agentic AI", I mean the ability of a model to direct a working loop like the one on this slide. 
+
+Here, the user supplies a goal such as recreating a figure. The model selects a step toward that goal. A tool, such as an R script or shell command, carries out that step. 
+
+The result returns to the model, which reads it and selects the next step. The loop repeats until the goal is met, it hits a limit, or it hits some review point set by the user.
+
+There are two components here that separate this from non-agentic use. 
+
+The first is delegation: the model hands work to ordinary programs instead of predicting the answer token by token. 
+
+The second is autonomy: within the loop, the model decides what to do next based on output. The user sets the goal and (possibly) the boundaries, but the model has say in how and whether things proceed.
+
+Importantly, agentic and non-agentic are modes of use, not interface or tool types.
+
+---
+
+# Using Agentic AI for what?
+
+.font160[
+
+* Statistical programming. 
+
+* Manuscript development. 
+
+* Internal manuscript review.  
+
+* Literature surveillance.  
+
+* Grant development.  
+
+* Project management.  
+
+* Knowledge management. 
+
+]
+
+???
+
+Writing, debugging, and refactoring R/Python code for simulation studies and data analyses, keeping pipelines reproducible, and making them shareable / open source via git and GitHub.
+
+Evaluating drafts of Methods and Results sections, formatting to a target journal's style, argument tightening, and reference management (e.g., changing citation styles from one journal to another).
+
+I've built a multi-agent "referee" that runs an extensive adversarial review of our drafts before submission: independent specialist reviewers, a falsification pass, verification and deduplication, then an adjudicated final report. For important findings I sometimes run the same review across two vendors' models (openAI and Anthropic) as an independence check. This has turned out to be very useful (but token heavy, so a bit pricy), and I am working on perfecting/testing it.
+
+A small agent I wrote searches PubMed, arXiv, medRxiv, and Semantic Scholar weekly, scores every new paper against a profile built from my own papers, and emails me a ranked digest. It runs unattended in the cloud via API, and costs about a dollar a week.
+
+Drafting project abstract and narratives, budget justifications based on a specific aims page and research proposal, constructing timelines and gantt charts, and running a "brutal critic" on aims pages / grant.
+
+My project folders contain machine-readable status files, and I have an agent that aggregates these into a dashboard, checks activity against my quarterly commitments, and runs my Sunday weekly planning session.
+
+AI helps me manage a linked note system (via a software tool called Obsidian, a system I've been using since well before AI). I use it to create structured notes from papers I read, and end-of-session distillation of concepts and frameworks worth keeping, and funneling into the right note. Makes past reading and past projects machine retrievable when writing the next paper or grant. It has been of tremendous use and great for generating new ideas from stuff I've read / done in the past.
+
+---
+name: engage-overview
+class: center, middle, engagement-section
+
+# Three ways to engage with AI
+
+&lt;div class="engage-route-labels"&gt;&lt;span&gt;Web interfaces&lt;/span&gt;&lt;span&gt;Graphical workspaces&lt;/span&gt;&lt;span&gt;Terminal applications&lt;/span&gt;&lt;/div&gt;
+
+???
+
+So far we have talked about what AI is. Next, we address a more practical, about how we actually engage with it? There are many ways in which one can use AI, but three are general enough to mention here. The main difference between these three is how much of your computer the AI can access.
+
+---
+name: engage-web
+class: engagement-section
+
+# 1. Web interfaces
+
+&lt;p class="engage-subtitle"&gt;Conversation, uploaded material, and connected sources&lt;/p&gt;
+
+&lt;div class="engage-layout"&gt;
+  &lt;figure class="engage-visual"&gt;
+    &lt;img src="assets/screenshots/chatGPT-web.png" alt="ChatGPT open in a browser at chatgpt.com: a Chat/Work toggle with Chat selected, an Ask ChatGPT composer, and suggestion shortcuts. The sidebar is collapsed and no conversation is open."&gt;
+    &lt;figcaption&gt;ChatGPT web&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;dl class="engage-details"&gt;
+    &lt;dt&gt;Benefit&lt;/dt&gt;&lt;dd&gt;No local installation;&lt;br&gt;suited to conversational iteration.&lt;/dd&gt;
+    &lt;dt&gt;Tradeoff&lt;/dt&gt;&lt;dd&gt;Limited source file access&lt;br&gt;and output return.&lt;/dd&gt;
+  &lt;/dl&gt;
+&lt;/div&gt;
+
+&lt;div class="engage-source"&gt;Capabilities: &lt;a href="https://learn.chatgpt.com/docs/web"&gt;OpenAI, ChatGPT on the web&lt;/a&gt;; &lt;a href="https://learn.chatgpt.com/docs/projects"&gt;Projects and chats&lt;/a&gt;. Checked Sep 13, 2026. Uses are suggested examples.&lt;/div&gt;
+
+???
+
+The first is the web interface, the one most of us already use. There's nothing to install, and it's well suited to conversational back and forth with uploaded documents and connected sources. The tradeoff is reach, in that it has limited access to the files on your machine, and moving its output back into your project has to be done manually.
+
+---
+name: engage-workspace
+class: engagement-section
+
+# 2. Graphical workspaces
+
+&lt;p class="engage-subtitle"&gt;Claude Cowork: delegate work across files and tools&lt;/p&gt;
+
+&lt;div class="engage-layout"&gt;
+  &lt;figure class="engage-visual"&gt;
+    &lt;img src="assets/screenshots/engage-cowork.png" alt="Claude Cowork desktop session showing a greeting, a model-usage panel, and a composer with a connected local project folder."&gt;
+    &lt;figcaption&gt;Claude Cowork&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;dl class="engage-details"&gt;
+    &lt;dt&gt;Benefit&lt;/dt&gt;&lt;dd&gt;Multi-file delegation&lt;br&gt;without a terminal.&lt;/dd&gt;
+    &lt;dt&gt;Tradeoff&lt;/dt&gt;&lt;dd&gt;Restricted scope access; operates only in assigned folder.&lt;/dd&gt;
+  &lt;/dl&gt;
+&lt;/div&gt;
+
+&lt;div class="engage-source"&gt;&lt;a href="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"&gt;Anthropic, Cowork guide&lt;/a&gt;; &lt;a href="https://learn.chatgpt.com/docs/get-started-with-work"&gt;OpenAI, ChatGPT Work&lt;/a&gt;. Checked Sep 13, 2026. Uses are suggested examples.&lt;/div&gt;
+
+???
+
+The second is a graphical workspace, such as Claude Cowork. You assign it a project folder, and it can read and edit the files in that folder, with no terminal or shell interface required. The tradeoff is scope: its access to your local filesystem is generally limited to the folders you explicitly give it access to.
+
+---
+name: engage-terminal
+class: engagement-section
+
+# 3. Terminal applications
+
+&lt;p class="engage-subtitle"&gt;Claude Code&lt;/p&gt;
+
+&lt;div class="engage-layout"&gt;
+  &lt;figure class="engage-visual"&gt;
+    &lt;img src="assets/screenshots/engage-terminal-claude.png" alt="Claude Code running in a terminal: startup screen with version, model, and working directory, with auto mode enabled. No task has been run."&gt;
+    &lt;figcaption&gt;Claude Code&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;dl class="engage-details"&gt;
+    &lt;dt&gt;Benefit&lt;/dt&gt;&lt;dd&gt;Runs scripts, git,&lt;br&gt;tests, and batch jobs.&lt;/dd&gt;
+    &lt;dt&gt;Tradeoff&lt;/dt&gt;&lt;dd&gt;Command literacy;&lt;br&gt;control write access&lt;br&gt;and execution.&lt;/dd&gt;
+  &lt;/dl&gt;
+&lt;/div&gt;
+
+&lt;div class="engage-source"&gt;&lt;a href="https://code.claude.com/docs/en/overview"&gt;Anthropic, Claude Code overview&lt;/a&gt;; &lt;a href="https://learn.chatgpt.com/docs/codex/cli"&gt;OpenAI, Codex CLI&lt;/a&gt;. Checked Sep 13, 2026. Uses are suggested examples.&lt;/div&gt;
+
+???
+
+The third is a terminal-based agent, such as Claude Code running from the command line. This gives it potentially much broader reach: it can run scripts, use Git, execute tests, launch batch jobs, and invoke other command-line tools on your machine. The tradeoff is that it requires some command-line literacy, and you need to pay attention to what the agent is allowed to write and execute.
+
+---
+name: ladders-overview
+class: center, middle, ladders
+
+# Delegation and stakes ladders
+
+&lt;p class="ladders-divider-note"&gt; &amp;nbsp;&lt;em&gt;Will delegating pay?&lt;/em&gt; &amp;nbsp;·&amp;nbsp; &lt;em&gt;What price if it's wrong?&lt;/em&gt;&lt;/p&gt;
+
+???
+
+Once we determine how we will engage with AI, a more difficult question involves judgement. I find it use ful to separate these judgements into at least two inter-related categories. 
+
+First: is delegating a task or set of tasks to AI actually worth the effort? 
+
+Second: what price do we pay if the delegated work is wrong? What's at stake?
+
+---
+name: delegation-question
+class: section-one, ladders
+
+# Is it worth delegating?
+
+&lt;p class="s1-kicker"&gt;Before delegating a task to AI, evaluate whether:&lt;/p&gt;
+
+`$$\text{specify} \;+\; \text{supervise} \;+\; \text{verify} \;+\; \text{repair} \;\;&lt;\;\; \text{do it yourself}$$`
+
+
+&lt;div class="s1-source"&gt;Working guidance: &lt;a href="https://www.anthropic.com/engineering/building-effective-agents"&gt;Anthropic, &lt;em&gt;Building effective agents&lt;/em&gt;, 2024&lt;/a&gt; ("find the simplest solution possible"). A heuristic, not a measured model.&lt;/div&gt;
+
+???
+
+Of course, one can use AI for almost anything we might do sitting at our computers, but whether it's worth our time and energy to do so should be a question considered explicitly before embarking on carrying out a project with AI. 
+
+Generally, we should always consider whether the work of specifying and supervising an AI, verifying it's output, and repairing what might have been done incorrectly is overall less than the work that would result from us simply doing it ourselves.  
+
+CLICK
+
+--
+
+&lt;br&gt;
+
+.font130[
+
+When a task recurs (amortization) and/or when verification is simple, delegation usually pays off.
+
+]
+
+???
+
+One helpful heuristic lies in considering amortization over time, and our ability to verify the work that AI does. We'll see a specific example of this in a couple of slides, but generally when a task is recurring and easy to verify, it may be a good candidate for AI to work on with you.
+
+
+---
+name: delegation-ladder
+class: section-one, ladders
+
+# The delegation ladder
+
+&lt;svg class="ladder-stair" viewBox="0 0 1120 400" role="img" aria-labelledby="lad-stair-title lad-stair-desc"&gt;
+  &lt;title id="lad-stair-title"&gt;The delegation ladder&lt;/title&gt;
+  &lt;desc id="lad-stair-desc"&gt;Four rungs of increasing delegation: assistant, collaborator, delegate with structure, delegate with autonomy. Beneath the rungs, the human role shifts from operating to approving to observing.&lt;/desc&gt;
+  &lt;rect class="lad-node" x="10" y="210" width="260" height="90"/&gt;
+  &lt;rect class="lad-node" x="282" y="150" width="260" height="150"/&gt;
+  &lt;rect class="lad-node" x="554" y="90" width="260" height="210"/&gt;
+  &lt;rect class="lad-node" x="826" y="30" width="260" height="270"/&gt;
+  &lt;text class="lad-name" x="140" y="246"&gt;1. Assistant&lt;/text&gt;
+  &lt;text class="lad-ex" x="140" y="278"&gt;"explain this estimator"&lt;/text&gt;
+  &lt;text class="lad-name" x="412" y="186"&gt;2. Collaborator&lt;/text&gt;
+  &lt;text class="lad-ex" x="412" y="218"&gt;"critique this draft,&lt;/text&gt;
+  &lt;text class="lad-ex" x="412" y="242"&gt;with my documents"&lt;/text&gt;
+  &lt;text class="lad-name" x="684" y="122"&gt;3. Delegate,&lt;/text&gt;
+  &lt;text class="lad-name" x="684" y="150"&gt;with structure&lt;/text&gt;
+  &lt;text class="lad-ex" x="684" y="182"&gt;"run the analysis under&lt;/text&gt;
+  &lt;text class="lad-ex" x="684" y="206"&gt;a plan I reviewed"&lt;/text&gt;
+  &lt;text class="lad-name" x="956" y="62"&gt;4. Delegate,&lt;/text&gt;
+  &lt;text class="lad-name" x="956" y="90"&gt;with autonomy&lt;/text&gt;
+  &lt;text class="lad-ex" x="956" y="122"&gt;"standing weekly&lt;/text&gt;
+  &lt;text class="lad-ex" x="956" y="146"&gt;literature digest"&lt;/text&gt;
+  &lt;text class="lad-axis lad-left" x="10" y="326"&gt;your role&lt;/text&gt;
+  &lt;path class="lad-line" d="M 10 340 H 1078"/&gt;
+  &lt;polygon class="lad-arrowhead" points="1076,334.75 1086.5,340 1076,345.25"/&gt;
+  &lt;text class="lad-role" x="140" y="374"&gt;you operate&lt;/text&gt;
+  &lt;text class="lad-role" x="412" y="374"&gt;you operate&lt;/text&gt;
+  &lt;text class="lad-role" x="684" y="374"&gt;you approve&lt;/text&gt;
+  &lt;text class="lad-role" x="956" y="374"&gt;you observe&lt;/text&gt;
+&lt;/svg&gt;
+
+???
+
+The question of whether it's worth our time to assign a project, or components of a project, to AI leads to the concept of a delegation ladder, capturing questions about roughly WHAT and HOW MUCH we delegate to AI?
+
+On the leftmost side of this ladder or staircase, we delegate the least, using AI as little more than a search engine or a tool to compile and organize information. 
+
+At the other end of the spectrum, we give AI the autonomy to make decisions without our input or approval.
+
+--
+
+&lt;div class="ladder-dims"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;Who chooses the next step?&lt;/span&gt; &amp;nbsp;you at every turn → you at checkpoints → the model, with structure and checks → the model&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;The unit of work handed over?&lt;/span&gt; &amp;nbsp;a question → a working session → a bounded task → a standing process&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;When verification happens?&lt;/span&gt; &amp;nbsp;every response → at checkpoints → after the fact&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;(Graded autonomy as a design choice): &lt;a href="https://apps.dtic.mil/sti/citations/ADA057655"&gt;Sheridan &amp;amp; Verplank, 1978&lt;/a&gt;; &lt;a href="https://www.sae.org/standards/content/j3016_202104/"&gt;SAE J3016&lt;/a&gt;; &lt;a href="https://arxiv.org/abs/2311.02462"&gt;Morris et al., 2024&lt;/a&gt;.&lt;/div&gt;
+
+???
+
+This ladder can be conceptualized in many ways. For instance, we might ask "who chooses the next step in the work process?", and increasing amounts of delegation might lead to a progression such as "you, every time", "you at prespecified checkpoints", the model, with structure and checks, and the model with structure, but no checks.  
+
+As an example of full delegation with structure, consider a tool that I recently built for myself, which is a literature search agent. 
+
+---
+name: autonomy-example
+class: section-one, ladders
+
+# Delegate with Autonomy: An Example
+
+&lt;img class="lad-strip" src="assets/screenshots/lit-search-header.png" alt="Header of the Weekly Literature Digest email, September 6, 2026: 457 papers searched, 66 passed threshold (at least 6 of 10), top 20 shown; full scored list of 66 papers attached as an HTML file."&gt;
+
+&lt;svg class="lit-flow" viewBox="0 0 1120 200" role="img" aria-labelledby="lit-flow-title lit-flow-desc"&gt;
+  &lt;title id="lit-flow-title"&gt;The literature agent's pipeline&lt;/title&gt;
+  &lt;desc id="lit-flow-desc"&gt;Four sources — PubMed, arXiv, medRxiv, Semantic Scholar — feed deduplication and a keyword pre-filter; a language model scores each surviving paper against the presenter's publication profile; the top twenty arrive as a Sunday email. Counts from the September 6, 2026 run: 457 searched, 66 passed the threshold, 20 shown.&lt;/desc&gt;
+  &lt;rect class="lad-node" x="6" y="26" width="300" height="78"/&gt;
+  &lt;text x="156" y="58"&gt;PubMed · arXiv&lt;/text&gt;
+  &lt;text x="156" y="84"&gt;medRxiv · Semantic Scholar&lt;/text&gt;
+  &lt;path class="lad-line" d="M 306 65 H 332"/&gt;
+  &lt;polygon class="lad-arrowhead" points="330,59.75 340.5,65 330,70.25"/&gt;
+  &lt;rect class="lad-node" x="344" y="26" width="222" height="78"/&gt;
+  &lt;text x="455" y="58"&gt;deduplicate +&lt;/text&gt;
+  &lt;text x="455" y="84"&gt;keyword pre-filter&lt;/text&gt;
+  &lt;path class="lad-line" d="M 566 65 H 592"/&gt;
+  &lt;polygon class="lad-arrowhead" points="590,59.75 600.5,65 590,70.25"/&gt;
+  &lt;rect class="lad-node" x="604" y="26" width="290" height="78"/&gt;
+  &lt;text x="749" y="58"&gt;LLM scores each paper&lt;/text&gt;
+  &lt;text x="749" y="84"&gt;vs. my user profile&lt;/text&gt;
+  &lt;path class="lad-line" d="M 894 65 H 920"/&gt;
+  &lt;polygon class="lad-arrowhead" points="918,59.75 928.5,65 918,70.25"/&gt;
+  &lt;rect class="lad-node" x="932" y="26" width="182" height="78"/&gt;
+  &lt;text x="1023" y="58"&gt;top-20 digest,&lt;/text&gt;
+  &lt;text x="1023" y="84"&gt;emailed Sunday&lt;/text&gt;
+  &lt;text class="lit-count" x="156" y="138"&gt;457 papers&lt;/text&gt;
+  &lt;text class="lit-count" x="749" y="138"&gt;66 pass ≥ 6/10&lt;/text&gt;
+  &lt;text class="lit-count" x="1023" y="138"&gt;20 shown&lt;/text&gt;
+  &lt;text class="lad-axis" x="560" y="182"&gt;runs unattended in the cloud, weekly · $0.50–0.90 per run · remembers what it has already shown&lt;/text&gt;
+&lt;/svg&gt;
+
+???
+
+One problem that I often encounter given my eclectic research interests across a wide range of fields is keeping up with a literature in general and on specific topics. 
+
+At some point, this led to a mess of journal TOCs, mailing lists from google scholar, pubmed, the arxiv, and medrxiv that was simply out of hand. 
+
+So i created an online literature search agent that runs weekly in the cloud, searchers all the databases that I would be searching typically, and that uses an LLM structure with information that I give it in the form of papers that I like, papers that I've written, authors that I'd like to follow, and other information, and ranks a set of papers published in the preceding week using a relevance scale that is derived from the information I provided the LLM. Every sunday, I get an email with the top 20 ranked papers on topics that I am interested in, with a full scored list attached as an html file. 
+
+This literature search agent decides completely on its own (based on the context I provided) which papers are most relevant, and which less so, and then notifies me by email of what it found. 
+
+---
+name: stakes-ladder
+class: section-one, ladders
+
+# The stakes ladder
+
+&lt;svg class="stakes-stair" viewBox="0 0 1120 436" role="img" aria-labelledby="stakes-stair-title stakes-stair-desc"&gt;
+  &lt;title id="stakes-stair-title"&gt;The stakes ladder&lt;/title&gt;
+  &lt;desc id="stakes-stair-desc"&gt;Four tiers of rising stakes: routine (private and reversible), consequential (informs your thinking and drafts), high (enters the record), critical (irreversible, or protected). Beneath the steps, the matching rule for each tier, from delegate freely to mostly don't.&lt;/desc&gt;
+  &lt;rect class="lad-node" x="10" y="210" width="260" height="90"/&gt;
+  &lt;rect class="lad-node" x="282" y="150" width="260" height="150"/&gt;
+  &lt;rect class="lad-node" x="554" y="90" width="260" height="210"/&gt;
+  &lt;rect class="lad-node lad-human" x="826" y="30" width="260" height="270"/&gt;
+  &lt;text class="lad-name" x="140" y="246"&gt;1. Routine&lt;/text&gt;
+  &lt;text class="lad-ex" x="140" y="278"&gt;private and reversible&lt;/text&gt;
+  &lt;text class="lad-name" x="412" y="186"&gt;2. Consequential&lt;/text&gt;
+  &lt;text class="lad-ex" x="412" y="218"&gt;informs your thinking&lt;/text&gt;
+  &lt;text class="lad-ex" x="412" y="242"&gt;and drafts&lt;/text&gt;
+  &lt;text class="lad-name" x="684" y="126"&gt;3. High&lt;/text&gt;
+  &lt;text class="lad-ex" x="684" y="158"&gt;enters the record,&lt;/text&gt;
+  &lt;text class="lad-ex" x="684" y="182"&gt;affects your reputation&lt;/text&gt;
+  &lt;text class="lad-ex" x="684" y="182"&gt;as a scholar&lt;/text&gt;
+  &lt;text class="lad-name" x="956" y="62"&gt;4. Critical&lt;/text&gt;
+  &lt;text class="lad-ex" x="956" y="94"&gt;irreversible,&lt;/text&gt;
+  &lt;text class="lad-ex" x="956" y="118"&gt;or protected&lt;/text&gt;
+  &lt;text class="lad-axis lad-left" x="10" y="326"&gt;the rule&lt;/text&gt;
+  &lt;path class="lad-line" d="M 10 340 H 1078"/&gt;
+  &lt;polygon class="lad-arrowhead" points="1076,334.75 1086.5,340 1076,345.25"/&gt;
+  &lt;text class="lad-role" x="140" y="374"&gt;delegate freely&lt;/text&gt;
+  &lt;text class="lad-role" x="412" y="374"&gt;ground in sources;&lt;/text&gt;
+  &lt;text class="lad-role" x="412" y="398"&gt;spot-check; log&lt;/text&gt;
+  &lt;text class="lad-role" x="684" y="374"&gt;plan review;&lt;/text&gt;
+  &lt;text class="lad-role" x="684" y="398"&gt;independent verification;&lt;/text&gt;
+  &lt;text class="lad-role" x="684" y="422"&gt;provenance; disclose&lt;/text&gt;
+  &lt;text class="lad-role" x="956" y="374"&gt;mostly: don't&lt;/text&gt;
+&lt;/svg&gt;
+
+&lt;div class="ladder-dims dims-tight"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;What breaks if it's wrong?&lt;/span&gt; &amp;nbsp;information → a program you run once → your computer → the internet&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;Is it verifiable?&lt;/span&gt; &amp;nbsp;easily → with some effort → with great effort → unverifiable&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;Is it reversible?&lt;/span&gt; &amp;nbsp;completely → cheaply → with great effort → completely irreversible damage&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;"Chatbots ... cannot be responsible for the accuracy, integrity, and originality of the work." — &lt;a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html"&gt;ICMJE Recommendations&lt;/a&gt;. Same tiered shape as the &lt;a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"&gt;EU AI Act&lt;/a&gt; and &lt;a href="https://www.imdrf.org/documents/software-medical-device-possible-framework-risk-categorization-and-corresponding-considerations"&gt;FDA/IMDRF&lt;/a&gt; risk categories.&lt;/div&gt;
+
+???
+
+The second ladder focuses on a different question: what does it cost if the work is wrong? What's at stake? 
+
+The stakes ladder starts with work that is private and reversible; through consequential work that informs my thinking and my drafts; to high-stakes work that enters the scientific record and becomes a part of my reputation; and finally a critical tier level, where an error is is high stakes and irreversible.
+
+The three questions at the bottom locate a task on the ladder: what breaks if it is wrong, how hard the work is to verify, and whether a mistake can be undone.
+
+Each tier then carries its own rule, along the bottom of the staircase. Routine work: delegate freely. Consequential work: ground it in sources, spot-check it, keep a log. High stakes: review the plan before it runs, verify independently, keep provenance, and disclose the AI's role. Critical: mostly, don't.
+
+And here is how the two ladders work together, which is the one sentence I would like you to keep: the rung you choose on the delegation ladder has to be justified by the tier the task occupies on the stakes ladder. High delegation on low-stakes work is where the payoff lives. High delegation on high-stakes work is where the trouble lives. As the stakes rise, we climb down the delegation ladder, even when the model could probably do the task.
+
+The ICMJE line at the bottom anchors the top tier: a chatbot cannot be responsible for the accuracy, integrity, and originality of the work. Accountability cannot be delegated. That is why, at the top of this ladder, the autonomy stays with us.
+
+---
+name: protocol-overview
+class: center, middle, ladders
+
+# A protocol and example
+
+&lt;p class="ladders-divider-note"&gt;One small project, with folders, spec, prompts, checks, and a handoff.&lt;/p&gt;
+
+???
+
+
+---
+name: proto-problem
+class: section-one, ladders
+
+# Example Application
+
+&lt;br&gt;
+&lt;br&gt;
+
+.font140[
+
+* Quick exploration of new methods for effect modification (conditional average treatment effect) estimators.
+
+* The estimators, called **DR-** and **R-learner**, using the same super learner for outcome/exposure.
+
+* They also BOTH use LOESS for the actual learners.
+
+* The true CATE function is known by construction: τ(x) = 2·sin(x), best visualized (later).
+
+* The question: if I use exactly the same modeling strategies for both the **DR-** and **R-learner**, will I see a difference?
+
+]
+
+&lt;div class="s1-source"&gt;Full example: &lt;a href="https://github.com/ainaimi/ai-protocol-example"&gt;github.com/ainaimi/ai-protocol-example&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: proto-house
+class: section-one, ladders
+
+# The Folder Setup
+
+Files and folders that begin with "underscore" are AI specific:
+
+&lt;pre class="proto-tree"&gt;
+ai-protocol-example/
+├── _corpus/     sources material for the project
+├── _notes/      the project's memory: notes and closeouts
+├── _specs/      instructions for AI to carry out the work
+&lt;span class="tree-red"&gt;├── code/        R code for simulation and analysis&lt;/span&gt;
+&lt;span class="tree-red"&gt;├── output/      output that the code produced&lt;/span&gt;
+&lt;span class="tree-red"&gt;├── figures/     figures generated from the code&lt;/span&gt;
+├── PROMPTS.md   example AI prompts
+&lt;span class="tree-red"&gt;└── README.md    outline of project folder&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;div class="s1-source"&gt;Full example: &lt;a href="https://github.com/ainaimi/ai-protocol-example"&gt;github.com/ainaimi/ai-protocol-example&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: proto-spec
+class: section-one, ladders
+
+# Write the spec before any prompt
+
+&lt;p class="s1-kicker"&gt;The spec "specifies" the shape of the project, what it should look like, and thus what the AI should do to move the project forward (and how). Excerpt:&lt;/p&gt;
+
+&lt;pre class="proto-tree"&gt;
+## Question
+How do the DR-learner and the R-learner compare when estimating a known conditional 
+average treatment effect (CATE) function, with the nuisance modeling and smoothing 
+held identical between them?
+
+## Data-generating process
+For each of `n` independent individuals:
+
+- Covariate:  `X ~ Uniform(0, 2*pi)`
+- Exposure:   `A | X ~ Bernoulli( plogis(0.5 * sin(X)) )`
+- Potential outcomes: `Y0 = 5 + 0.5*X + Normal(0, 0.5)`; `Y1 = Y0 + tau(X)`
+- Observed outcome: `Y = A*Y1 + (1-A)*Y0`
+&lt;/pre&gt;
+
+&lt;div class="s1-source"&gt;Full example: &lt;a href="https://github.com/ainaimi/ai-protocol-example"&gt;github.com/ainaimi/ai-protocol-example&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: proto-prompt-plan
+class: section-one, ladders
+
+# Prompt 1: Planning
+
+&lt;div class="prompt-quote"&gt;Read _specs/2026-09-16-cate-comparison-spec.md, README.md, and the papers listed in _corpus/README.md. Propose a step-by-step plan to implement the spec exactly: file layout, functions, how the matched nuisance and smoothing constraints will be enforced, the assertions, and the figure. Flag anything in the spec that is ambiguous or underdetermined. Do not write any code yet.&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;div class="ladder-dims"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;The mode is plan only: the AI tool reads and proposes a plan.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;The plan is grounded in the spec and the corpus papers.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;The human task is to review and approve the plan, or fix the spec first.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;Full example: &lt;a href="https://github.com/ainaimi/ai-protocol-example"&gt;github.com/ainaimi/ai-protocol-example&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: proto-prompt-execute
+class: section-one, ladders
+
+# Prompt 2: Execution
+
+&lt;div class="prompt-quote"&gt;Execute the approved plan. Write the complete single-replicate pipeline as code/01_simulation.R, following the spec's DGP, estimators, metrics, and verification assertions; resolve any question about the DR-learner or R-learner against the papers in _corpus/. Ask me if anything is unclear. Save the ISE table to output/ise.csv. Then generate the figure comparing the different estimators.&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;div class="ladder-dims"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;For bigger projects, this is be done in steps, with verification.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;The spec's parameters and assertions instruct the AI; implementation details extracted from the corpus.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;You read the code at the checkpoints, then run it yourself, correct and proceed.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;Full example: &lt;a href="https://github.com/ainaimi/ai-protocol-example"&gt;github.com/ainaimi/ai-protocol-example&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: proto-verify
+class: section-one, ladders
+
+# Verify
+
+&lt;img class="proto-fig" src="images/cate_comparison.png" alt="Estimated CATE curves for the DR-learner (blue) and R-learner (red) overlaid on the true curve 2 times sine of x (black), with a histogram of X along the bottom. Both estimates track the truth through the interior; the R-learner flattens at both boundaries."&gt;
+
+
+&lt;div class="s1-source"&gt;Full example: &lt;a href="https://github.com/ainaimi/ai-protocol-example"&gt;github.com/ainaimi/ai-protocol-example&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: proto-closeout
+class: section-one, ladders
+
+# Closeout and Resumption
+
+&lt;div class="ladder-dims"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;End of session 1:&lt;/span&gt; &amp;nbsp;a dated note to _notes/: what was done and decided, what remains, and what's next.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"Session close:&lt;/span&gt; &amp;nbsp;a "closeout" function, which is a skill that saves a summary to _notes/.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class="prompt-quote"&gt;Read the most recent note in _notes/. Let's continue from where it left off.&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;Full example: &lt;a href="https://github.com/ainaimi/ai-protocol-example"&gt;github.com/ainaimi/ai-protocol-example&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: considerations-overview
+class: center, middle, ladders
+
+# Some final considerations
+
+---
+name: consider-data
+class: section-one, ladders
+
+# This example used no protected data
+
+&lt;p class="s1-kicker"&gt;The example ran entirely on simulated data. No PHI, and no human subjects data.&lt;/p&gt;
+
+&lt;div class="ladder-dims"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;What the example shared:&lt;/span&gt; &amp;nbsp;every prompt, spec, and data file was sent to a commercial model server. With simulated data, this is inconsequential.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;What changes with PHI:&lt;/span&gt; &amp;nbsp;the same step becomes a disclosure of protected data to a third party. HIPAA and Emory policy govern that step.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;Before opening AI in a folder with PHI:&lt;/span&gt; &amp;nbsp;know how your data are classified, and which tools are approved for that classification.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;Emory Office of Responsible AI, &lt;a href="https://responsibleai.emory.edu/guidelines/understanding-your-data-security-responsibilities.html"&gt;Understanding your data security responsibilities&lt;/a&gt;. Checked Sep 17, 2026.&lt;/div&gt;
+
+---
+name: consider-emory
+class: section-one, ladders
+
+# Emory policy on AI and sensitive data
+
+&lt;div class="policy-shots"&gt;
+  &lt;figure&gt;
+    &lt;img src="assets/screenshots/emory-data-security.png" alt="Top of Emory's Responsible AI site: a page titled AI Data Security Responsibilities, defining sensitive data as any information that can identify individuals or is considered confidential, restricted, or proprietary."&gt;
+    &lt;figcaption&gt;responsibleai.emory.edu&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;figure&gt;
+    &lt;img src="assets/screenshots/emory-copilot-launch.png" alt="Emory News story dated April 22, 2024: Microsoft Copilot AI chat service for Emory community launches."&gt;
+    &lt;figcaption&gt;news.emory.edu&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;div class="ladder-dims dims-tight"&gt;
+&lt;p&gt;Restricted data (PHI, PII, FERPA records) may only be used with Emory-approved secure AI technology. Public chatbots may retain inputs and train on them.&lt;/p&gt;
+&lt;p&gt;Emory's Microsoft Copilot is the protected option for everyday Emory data. It is still not approved for PHI or IIHI.&lt;/p&gt;
+&lt;p&gt;Use the minimum data necessary, deidentify to HIPAA standards, and report any inadvertent sharing to Information Security and Compliance.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;&lt;a href="https://responsibleai.emory.edu/guidelines/understanding-your-data-security-responsibilities.html"&gt;Emory Responsible AI, data security responsibilities&lt;/a&gt;; &lt;a href="https://news.emory.edu/stories/2024/04/microsoft-copilot-ai-chat-service-emory-community-launches"&gt;Emory News, Copilot launch&lt;/a&gt;. Checked Sep 17, 2026.&lt;/div&gt;
+
+---
+name: consider-integrity
+class: section-one, ladders
+
+# Scientific integrity
+
+&lt;div class="ladder-dims"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;Accountability:&lt;/span&gt; &amp;nbsp;AI cannot be accountable, so it cannot be an author. Responsibility for the accuracy, integrity, and originality of the work stays with the person whose name is on it.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;Verification:&lt;/span&gt; &amp;nbsp;verification is part of authorship. In one audit, 28.6% of GPT-4 generated references were fabricated.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;Disclosure:&lt;/span&gt; &amp;nbsp;disclosure follows venue policy. Many journals require it, and NIH prohibits AI in peer review entirely.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-takeaway"&gt;The standard has not changed. If you cannot explain and defend the work, it does not go out under your name.&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;&lt;a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html"&gt;ICMJE Recommendations&lt;/a&gt;; &lt;a href="https://publicationethics.org/cope-position-statements/ai-author"&gt;COPE position on AI and authorship&lt;/a&gt;; &lt;a href="https://www.jmir.org/2024/1/e53164"&gt;Chelli et al., JMIR 2024&lt;/a&gt;; &lt;a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-23-149.html"&gt;NIH NOT-OD-23-149&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: consider-scope
+class: section-one, ladders
+
+# What this talk was not about
+
+&lt;div class="ladder-dims"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;A larger space:&lt;/span&gt; &amp;nbsp;there is a serious research program aimed at automating the scientific process itself. These systems generate hypotheses, run experiments, and write the paper.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;No position taken:&lt;/span&gt; &amp;nbsp;this talk took no position on that program. Whether and where science should be automated is a separate question, and a separate talk.&lt;/p&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;The frame used here:&lt;/span&gt; &amp;nbsp;AI as a tool, an operating layer around the science we already do. The questions, the estimands, and the verification duties are unchanged. The aim is to expedite and deepen that work, not to automate it.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-takeaway"&gt;On every slide of this talk, the question, the spec, the approval, and the interpretation stayed human.&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;&lt;a href="https://arxiv.org/abs/2509.08713"&gt;Luo, Kasirzadeh &amp;amp; Shah, 2025, arXiv:2509.08713&lt;/a&gt;; &lt;a href="https://arxiv.org/abs/2607.02134"&gt;Hans &amp;amp; Bilionis, 2026, arXiv:2607.02134&lt;/a&gt;.&lt;/div&gt;
+
+---
+name: deskilling-overview
+class: center, middle, ladders
+
+# The dangers of deskilling
+
+---
+name: deskilling
+class: section-one, ladders
+
+# Deskilling
+
+&lt;div class="deskill-layout"&gt;
+  &lt;figure&gt;
+    &lt;img src="assets/screenshots/nyt-cognitive-surrender.png" alt="New York Times headline: An M.I.T. Report Warns A.I. Is Causing Cognitive Surrender. Universities Are in a Bind. Subhead: As A.I. upends education, university leaders have been all over the map about how to respond. It can be very confusing for students."&gt;
+    &lt;figcaption&gt;The New York Times, Sep 15, 2026&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;div class="ladder-dims deskill-points"&gt;
+    &lt;p&gt;&lt;span class="lad-q"&gt;Clinicians:&lt;/span&gt; &amp;nbsp;after months of AI-assisted colonoscopy, experienced endoscopists detected fewer adenomas in unassisted procedures: 28.4% before AI exposure, 22.4% after.&lt;/p&gt;
+    &lt;p&gt;&lt;span class="lad-q"&gt;Students:&lt;/span&gt; &amp;nbsp;MIT's committee on AI in teaching describes "cognitive surrender": turning to the chatbot at the first sign of difficulty.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+--
+
+&lt;div class="ladder-dims dims-tight"&gt;
+&lt;p&gt;&lt;span class="lad-q"&gt;A proactive stance:&lt;/span&gt; &amp;nbsp;every rung of the delegation ladder assumes you can specify, supervise, and verify. Those abilities come from doing the work unassisted.&lt;/p&gt;
+&lt;p&gt;If you delegate a skill before you have built it, you give up the ability to check the work, whether the machine's or your own. Build the skill before you delegate it. Keep doing some of the core work by hand. Treat verification as a skill that needs maintenance.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="s1-source"&gt;&lt;a href="https://www.thelancet.com/journals/langas/article/PIIS2468-1253(25)00289-4/abstract"&gt;Budzyń et al., Lancet Gastroenterol Hepatol 2025&lt;/a&gt;; &lt;a href="https://www.nytimes.com/2026/09/15/us/universities-ai-warnings-enthusiasm.html"&gt;The New York Times, Sep 15, 2026&lt;/a&gt;.&lt;/div&gt;
+
+---
+
+class: title-slide, left, bottom
+
+&lt;span style="font-size: 50px;"&gt; Practical AI for Science: An Orientation &lt;/span&gt; &lt;br&gt;
+
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;table style="border: none; border-collapse: collapse; margin-left: 0; margin-top: -50px; float: left;"&gt;
+&lt;tr style="border: none; background: transparent; line-height: 0.8;"&gt;
+&lt;td style="border: none; border-right: 1px solid #6ca3d9; padding: 2px 5px; background: transparent;"&gt;&lt;strong&gt;Ashley I Naimi, PhD&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="border: none; padding: 2px 5px; background: transparent;"&gt;Dept of Epidemiology&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="border: none; background: transparent; line-height: 0.8;"&gt;
+&lt;td style="border: none; border-right: 1px solid #6ca3d9; padding: 2px 5px; background: transparent;"&gt;Professor&lt;/td&gt;
+&lt;td style="border: none; padding: 2px 5px; background: transparent;"&gt;Emory University&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;div style="line-height: 1.2;"&gt;
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg> &amp;nbsp; &lt;a href="mailto:ashley.naimi@emory.edu"&gt;ashley.naimi@emory.edu&lt;/a&gt; &lt;br&gt;
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/></svg> &amp;nbsp; &lt;a href="https://ainaimi.github.io/"&gt;https://ainaimi.github.io/&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;img src="images/qr_code.svg" class="qr-code" alt="QR Code"&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "solarized-light",
+  "highlightLanguage": "R",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
